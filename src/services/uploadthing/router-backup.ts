@@ -5,6 +5,17 @@ import { inngest } from "../inngest/client"
 import { upsertUserResume } from "@/features/users/db/userResumes"
 import { db } from "@/drizzle/db"
 import { eq } from "drizzle-orm"
+import UserResumePage from "@/app/(job-seeker)/user-settings/resume/page"
+import { UserResumeTable, UserTable } from "@/drizzle/schema"
+import { uploadthing } from "./client"
+import { clerkClient } from "@clerk/nextjs/server"reateUploadthing, type FileRouter } from "uploadthing/next"
+import { UploadThingError } from "uploadthing/server"
+import { getCurrentUser } from "../clerk/lib/getCurrentAuth"
+import { inngest } from "../inngest/client"
+import { upsertUserResume } from "@/features/users/db/userResumes"
+import { db } from "@/drizzle/db"
+import { eq } from "drizzle-orm"
+import UserResumePage from "@/app/(job-seeker)/user-settings/resume/page"
 import { UserResumeTable, UserTable } from "@/drizzle/schema"
 import { uploadthing } from "./client"
 import { clerkClient } from "@clerk/nextjs/server"
@@ -30,6 +41,9 @@ export const customFileRouter = {
           console.error("Utilisateur non authentifié dans UploadThing")
           throw new UploadThingError("Unauthorized - Vous devez être connecté pour uploader un fichier")
         }
+
+        // Vérifier si l'utilisateur existe dans notre DB, sinon le créer
+        await ensureUserExists(userId)
 
         return { userId }
       } catch (error) {
@@ -123,16 +137,6 @@ async function ensureUserExists(userId: string) {
     return newUser
   } catch (error) {
     console.error("Erreur lors de la création automatique de l'utilisateur:", error)
-    
-    // Si impossible de récupérer les données Clerk, créer un utilisateur basique
-    const [newUser] = await db.insert(UserTable).values({
-      id: userId,
-      name: "Utilisateur",
-      email: `${userId}@temp.clerk`,
-      imageUrl: "https://img.clerk.com/default_avatar.png",
-    }).returning()
-
-    console.log("Utilisateur basique créé:", newUser)
-    return newUser
+    throw new UploadThingError("Impossible de créer l'utilisateur")
   }
 }

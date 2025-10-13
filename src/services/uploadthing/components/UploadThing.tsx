@@ -23,14 +23,23 @@ export function UploadDropzone({
         "border-dashed border-2 border-muted rounded-lg flex items-center justify-center",
         className
       )}
+      onUploadBegin={() => {
+        console.log("Upload démarré...")
+        toast.info("Upload démarré...")
+      }}
+      onUploadProgress={(progress) => {
+        console.log(`Progrès: ${progress}%`)
+      }}
       onClientUploadComplete={res => {
+        console.log("Upload terminé:", res)
         res.forEach(({ serverData }) => {
           toast.success(serverData.message)
         })
         onClientUploadComplete?.(res)
       }}
       onUploadError={(error: UploadThingError<Json>) => {
-        toast.error(error.message)
+        console.error("Erreur upload:", error)
+        toast.error(`Erreur: ${error.message}`)
         onUploadError?.(error)
       }}
     />

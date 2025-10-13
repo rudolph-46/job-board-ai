@@ -5,7 +5,7 @@ import {
   locationRequirements,
   wageIntervals,
 } from "@/drizzle/schema"
-import { createAgent, gemini } from "@inngest/agent-kit"
+import { createAgent, openai } from "@inngest/agent-kit"
 import { z } from "zod"
 import { getLastOutputMessage } from "./getLastOutputMessage"
 
@@ -50,9 +50,9 @@ export async function getMatchingJobListings(
           .parse(listing)
       )
     )}`,
-    model: gemini({
-      model: "gemini-2.0-flash",
-      apiKey: env.GEMINI_API_KEY,
+    model: openai({
+      model: "gpt-4",
+      apiKey: env.OPENAI_API_KEY,
     }),
   })
 
@@ -63,6 +63,6 @@ export async function getMatchingJobListings(
 
   return lastMessage
     .split(",")
-    .map(jobId => jobId.trim())
+    .map(jobId => jobId.trim().replace(/['"]/g, "")) // Supprime les guillemets
     .filter(Boolean)
 }

@@ -43,7 +43,19 @@ const searchParamsSchema = z.object({
   type: z.enum(jobListingTypes).optional().catch(undefined),
   jobIds: z
     .union([z.string(), z.array(z.string())])
-    .transform(v => (Array.isArray(v) ? v : [v]))
+    .transform(v => {
+      if (Array.isArray(v)) {
+        return v.map(id => id.replace(/['"]/g, "").trim()).filter(Boolean)
+      }
+      if (typeof v === "string") {
+        // Nettoyer la chaîne et diviser si nécessaire
+        const cleaned = v.replace(/['"]/g, "").trim()
+        return cleaned.includes(',') 
+          ? cleaned.split(',').map(id => id.trim()).filter(Boolean)
+          : cleaned ? [cleaned] : []
+      }
+      return []
+    })
     .optional()
     .catch([]),
 })
