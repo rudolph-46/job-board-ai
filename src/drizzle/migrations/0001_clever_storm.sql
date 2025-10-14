@@ -1,0 +1,1 @@
+ALTER TABLE "job_listings" ADD COLUMN "applicationUrl" varchar;

@@ -28,7 +28,7 @@ export const applicationStageEnum = pgEnum(
 export const JobListingApplicationTable = pgTable(
   "job_listing_applications",
   {
-    jobListingId: uuid()
+    jobListingId: varchar()
       .references(() => JobListingTable.id, { onDelete: "cascade" })
       .notNull(),
     userId: varchar()

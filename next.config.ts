@@ -3,7 +3,8 @@ import type { NextConfig } from "next"
 const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
-    dynamicIO: true,
+    // Activer uniquement useCache pour les directives "use cache"
+    useCache: true,
   },
 }
 

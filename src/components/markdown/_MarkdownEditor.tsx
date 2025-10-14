@@ -1,6 +1,6 @@
 "use client"
 
-import { useIsDarkMode } from "@/hooks/useIsDarkMode"
+import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils"
 import {
   BlockTypeSelect,
@@ -27,7 +27,8 @@ export default function InternalMarkdownEditor({
   className,
   ...props
 }: MDXEditorProps & { ref?: Ref<MDXEditorMethods> }) {
-  const isDarkMode = useIsDarkMode()
+  const { theme } = useTheme()
+  const isDarkMode = theme === "dark"
 
   return (
     <MDXEditor

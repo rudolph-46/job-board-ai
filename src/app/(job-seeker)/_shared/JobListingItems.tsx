@@ -17,7 +17,7 @@ import {
 import { convertSearchParamsToString } from "@/lib/convertSearchParamsToString"
 import { cn } from "@/lib/utils"
 import { AvatarFallback } from "@radix-ui/react-avatar"
-import { and, desc, eq, ilike, or, SQL } from "drizzle-orm"
+import { and, desc, eq, ilike, or, SQL, sql } from "drizzle-orm"
 import Link from "next/link"
 import { Suspense } from "react"
 import { differenceInDays } from "date-fns"
@@ -28,6 +28,7 @@ import { optional, z } from "zod"
 import { cacheTag } from "next/dist/server/use-cache/cache-tag"
 import { getJobListingGlobalTag } from "@/features/jobListings/db/cache/jobListings"
 import { getOrganizationIdTag } from "@/features/organizations/db/cache/organizations"
+import { Pagination } from "@/components/Pagination"
 
 type Props = {
   searchParams: Promise<Record<string, string | string[]>>
@@ -41,6 +42,7 @@ const searchParamsSchema = z.object({
   experience: z.enum(experienceLevels).optional().catch(undefined),
   locationRequirement: z.enum(locationRequirements).optional().catch(undefined),
   type: z.enum(jobListingTypes).optional().catch(undefined),
+  page: z.string().transform(v => Math.max(1, parseInt(v) || 1)).optional().catch(1),
   jobIds: z
     .union([z.string(), z.array(z.string())])
     .transform(v => {
@@ -73,29 +75,51 @@ async function SuspendedComponent({ searchParams, params }: Props) {
   const { success, data } = searchParamsSchema.safeParse(await searchParams)
   const search = success ? data : {}
 
-  const jobListings = await getJobListings(search, jobListingId)
+  // Configuration de la pagination
+  const itemsPerPage = 10
+  const currentPage = search.page || 1
+  
+  const result = await getJobListings(search, jobListingId, currentPage, itemsPerPage)
+  const { jobListings = [], totalCount = 0 } = result || {}
+  
   if (jobListings.length === 0) {
     return (
       <div className="text-muted-foreground p-4">No job listings found</div>
     )
   }
 
+  const totalPages = Math.ceil(totalCount / itemsPerPage)
+  
+  // Préparer les paramètres de recherche pour la pagination (sans le page)
+  const searchForUrl = Object.fromEntries(
+    Object.entries(search).filter(([key, value]) => key !== 'page' && value != null)
+      .map(([key, value]) => [key, Array.isArray(value) ? value : String(value)])
+  )
+  const baseUrl = `/?${convertSearchParamsToString(searchForUrl)}`
+
   return (
-    <div className="space-y-4">
-      {jobListings.map(jobListing => (
-        <Link
-          className="block"
-          key={jobListing.id}
-          href={`/job-listings/${jobListing.id}?${convertSearchParamsToString(
-            search
-          )}`}
-        >
-          <JobListingListItem
-            jobListing={jobListing}
-            organization={jobListing.organization}
-          />
-        </Link>
-      ))}
+    <div className="space-y-6">
+      <div className="space-y-4">
+        {jobListings.map(jobListing => (
+          <Link
+            className="block"
+            key={jobListing.id}
+            href={`/jobs/${jobListing.id}`}
+          >
+            <JobListingListItem
+              jobListing={jobListing}
+              organization={jobListing.organization}
+            />
+          </Link>
+        ))}
+      </div>
+      
+      {/* Pagination */}
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        baseUrl={baseUrl}
+      />
     </div>
   )
 }
@@ -104,18 +128,24 @@ function JobListingListItem({
   jobListing,
   organization,
 }: {
-  jobListing: Pick<
+    jobListing: Pick<
     typeof JobListingTable.$inferSelect,
     | "title"
-    | "stateAbbreviation"
+    | "region"
     | "city"
-    | "wage"
-    | "wageInterval"
-    | "experienceLevel"
-    | "type"
-    | "postedAt"
-    | "locationRequirement"
+    | "aiSalaryMinValue"
+    | "aiSalaryMaxValue"
+    | "aiSalaryCurrency"
+    | "aiExperienceLevel"
+    | "aiEmploymentType"
+    | "datePosted"
+    | "aiWorkArrangement"
     | "isFeatured"
+    | "id"
+    | "url"
+    | "organizationName"
+    | "aiKeySkills"
+    | "descriptionHtml"
   >
   organization: Pick<typeof OrganizationTable.$inferSelect, "name" | "imageUrl">
 }) {
@@ -146,20 +176,23 @@ function JobListingListItem({
           <div className="flex flex-col gap-1">
             <CardTitle className="text-xl">{jobListing.title}</CardTitle>
             <CardDescription className="text-base">
-              {organization.name}
+              {jobListing.organizationName}
+              {(jobListing.city || jobListing.region) && (
+                <span> - {[jobListing.city, jobListing.region].filter(Boolean).join(", ")}</span>
+              )}
             </CardDescription>
-            {jobListing.postedAt != null && (
+            {jobListing.datePosted != null && (
               <div className="text-sm font-medium text-primary @min-md:hidden">
-                <Suspense fallback={jobListing.postedAt.toLocaleDateString()}>
-                  <DaysSincePosting postedAt={jobListing.postedAt} />
+                <Suspense fallback={jobListing.datePosted.toLocaleDateString()}>
+                  <DaysSincePosting postedAt={jobListing.datePosted} />
                 </Suspense>
               </div>
             )}
           </div>
-          {jobListing.postedAt != null && (
+          {jobListing.datePosted != null && (
             <div className="text-sm font-medium text-primary ml-auto @max-md:hidden">
-              <Suspense fallback={jobListing.postedAt.toLocaleDateString()}>
-                <DaysSincePosting postedAt={jobListing.postedAt} />
+              <Suspense fallback={jobListing.datePosted.toLocaleDateString()}>
+                <DaysSincePosting postedAt={jobListing.datePosted} />
               </Suspense>
             </div>
           )}
@@ -170,6 +203,22 @@ function JobListingListItem({
           jobListing={jobListing}
           className={jobListing.isFeatured ? "border-primary/35" : undefined}
         />
+        
+        {/* Affichage des 3-5 premiers AI skills */}
+        {jobListing.aiKeySkills && Array.isArray(jobListing.aiKeySkills) && jobListing.aiKeySkills.length > 0 && (
+          <>
+            {jobListing.aiKeySkills.slice(0, 5).map((skill, index) => (
+              <Badge key={index} variant="secondary" className="text-xs">
+                {skill}
+              </Badge>
+            ))}
+            {jobListing.aiKeySkills.length > 5 && (
+              <Badge variant="outline" className="text-xs text-muted-foreground">
+                +{jobListing.aiKeySkills.length - 5} more
+              </Badge>
+            )}
+          </>
+        )}
       </CardContent>
     </Card>
   )
@@ -191,7 +240,9 @@ async function DaysSincePosting({ postedAt }: { postedAt: Date }) {
 
 async function getJobListings(
   searchParams: z.infer<typeof searchParamsSchema>,
-  jobListingId: string | undefined
+  jobListingId: string | undefined,
+  page = 1,
+  itemsPerPage = 10
 ) {
   "use cache"
   cacheTag(getJobListingGlobalTag())
@@ -199,13 +250,16 @@ async function getJobListings(
   const whereConditions: (SQL | undefined)[] = []
   if (searchParams.title) {
     whereConditions.push(
-      ilike(JobListingTable.title, `%${searchParams.title}%`)
+      or(
+        ilike(JobListingTable.title, `%${searchParams.title}%`),
+        ilike(JobListingTable.organizationName, `%${searchParams.title}%`)
+      )
     )
   }
 
   if (searchParams.locationRequirement) {
     whereConditions.push(
-      eq(JobListingTable.locationRequirement, searchParams.locationRequirement)
+      eq(JobListingTable.aiWorkArrangement, searchParams.locationRequirement)
     )
   }
 
@@ -215,18 +269,21 @@ async function getJobListings(
 
   if (searchParams.state) {
     whereConditions.push(
-      eq(JobListingTable.stateAbbreviation, searchParams.state)
+      eq(JobListingTable.region, searchParams.state)
     )
   }
 
   if (searchParams.experience) {
     whereConditions.push(
-      eq(JobListingTable.experienceLevel, searchParams.experience)
+      eq(JobListingTable.aiExperienceLevel, searchParams.experience)
     )
   }
 
   if (searchParams.type) {
-    whereConditions.push(eq(JobListingTable.type, searchParams.type))
+    // Note: aiEmploymentType is jsonb array, so we need to use jsonb contains
+    whereConditions.push(
+      sql`${JobListingTable.aiEmploymentType} ? ${searchParams.type}`
+    )
   }
 
   if (searchParams.jobIds) {
@@ -235,31 +292,65 @@ async function getJobListings(
     )
   }
 
-  const data = await db.query.JobListingTable.findMany({
-    where: or(
-      jobListingId
-        ? and(
-            eq(JobListingTable.status, "published"),
-            eq(JobListingTable.id, jobListingId)
-          )
-        : undefined,
-      and(eq(JobListingTable.status, "published"), ...whereConditions)
-    ),
-    with: {
-      organization: {
-        columns: {
-          id: true,
-          name: true,
-          imageUrl: true,
+  const whereClause = or(
+    jobListingId
+      ? and(
+          eq(JobListingTable.status, "published"),
+          eq(JobListingTable.id, jobListingId)
+        )
+      : undefined,
+    and(eq(JobListingTable.status, "published"), ...whereConditions)
+  )
+
+  // Si on cherche un job spécifique, pas de pagination
+  if (jobListingId) {
+    const data = await db.query.JobListingTable.findMany({
+      where: whereClause,
+      with: {
+        organization: {
+          columns: {
+            id: true,
+            name: true,
+            imageUrl: true,
+          },
         },
       },
-    },
-    orderBy: [desc(JobListingTable.isFeatured), desc(JobListingTable.postedAt)],
-  })
+      orderBy: [desc(JobListingTable.isFeatured), desc(JobListingTable.datePosted)],
+    })
 
-  data.forEach(listing => {
+    data.forEach(listing => {
+      cacheTag(getOrganizationIdTag(listing.organization.id))
+    })
+
+    return { jobListings: data, totalCount: data.length }
+  }
+
+  // Pour la pagination, récupérer le count total et les données paginées
+  const [jobListings, [{ count }]] = await Promise.all([
+    db.query.JobListingTable.findMany({
+      where: whereClause,
+      with: {
+        organization: {
+          columns: {
+            id: true,
+            name: true,
+            imageUrl: true,
+          },
+        },
+      },
+      orderBy: [desc(JobListingTable.isFeatured), desc(JobListingTable.datePosted)],
+      limit: itemsPerPage,
+      offset: (page - 1) * itemsPerPage,
+    }),
+    db
+      .select({ count: sql<number>`count(*)` })
+      .from(JobListingTable)
+      .where(whereClause)
+  ])
+
+  jobListings.forEach(listing => {
     cacheTag(getOrganizationIdTag(listing.organization.id))
   })
 
-  return data
+  return { jobListings, totalCount: count }
 }

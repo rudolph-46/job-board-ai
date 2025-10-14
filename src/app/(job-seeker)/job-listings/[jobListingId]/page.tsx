@@ -58,8 +58,10 @@ export default function JobListingPage({
     <>
       <ResizablePanelGroup autoSaveId="job-board-panel" direction="horizontal">
         <ResizablePanel id="left" order={1} defaultSize={60} minSize={30}>
-          <div className="p-4 h-screen overflow-y-auto">
-            <JobListingItems searchParams={searchParams} params={params} />
+          <div className="h-screen overflow-y-auto">
+            <div className="max-w-6xl mx-auto px-4 py-6">
+              <JobListingItems searchParams={searchParams} params={params} />
+            </div>
           </div>
         </ResizablePanel>
         <IsBreakpoint
@@ -82,13 +84,15 @@ export default function JobListingPage({
         >
           <ResizableHandle withHandle className="mx-2" />
           <ResizablePanel id="right" order={2} defaultSize={40} minSize={30}>
-            <div className="p-4 h-screen overflow-y-auto">
-              <Suspense fallback={<LoadingSpinner />}>
-                <JobListingDetails
-                  params={params}
-                  searchParams={searchParams}
-                />
-              </Suspense>
+            <div className="h-screen overflow-y-auto">
+              <div className="px-4 py-6">
+                <Suspense fallback={<LoadingSpinner />}>
+                  <JobListingDetails
+                    params={params}
+                    searchParams={searchParams}
+                  />
+                </Suspense>
+              </div>
             </div>
           </ResizablePanel>
         </IsBreakpoint>

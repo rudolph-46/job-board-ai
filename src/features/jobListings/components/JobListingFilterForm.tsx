@@ -36,7 +36,6 @@ import {
 import { StateSelectItems } from "./StateSelectItems"
 import { Button } from "@/components/ui/button"
 import { LoadingSwap } from "@/components/LoadingSwap"
-import { useSidebar } from "@/components/ui/sidebar"
 
 const ANY_VALUE = "any"
 
@@ -56,7 +55,6 @@ export function JobListingFilterForm() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const pathname = usePathname()
-  const { setOpenMobile } = useSidebar()
 
   const form = useForm({
     resolver: zodResolver(jobListingFilterSchema),
@@ -92,7 +90,6 @@ export function JobListingFilterForm() {
     }
 
     router.push(`${pathname}?${newParams.toString()}`)
-    setOpenMobile(false)
   }
 
   return (
@@ -103,9 +100,9 @@ export function JobListingFilterForm() {
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Job Title</FormLabel>
+              <FormLabel>Job Title or Company</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <Input {...field} placeholder="Search by job title or company name..." />
               </FormControl>
               <FormMessage />
             </FormItem>

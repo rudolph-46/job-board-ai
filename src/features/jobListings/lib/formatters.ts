@@ -3,29 +3,21 @@ import {
   JobListingStatus,
   JobListingType,
   LocationRequirement,
-  WageInterval,
+  AiWorkArrangement,
 } from "@/drizzle/schema"
 
-export function formatWageInterval(interval: WageInterval) {
-  switch (interval) {
-    case "hourly":
-      return "Hour"
-    case "yearly":
-      return "Year"
-    default:
-      throw new Error(`Invalid wage interval: ${interval satisfies never}`)
-  }
-}
+// Fonction supprimée car WageInterval n'existe plus dans le nouveau schéma
+// Les salaires sont maintenant gérés avec aiSalaryMinValue et aiSalaryMaxValue
 
 export function formatLocationRequirement(
   locationRequirement: LocationRequirement
 ) {
   switch (locationRequirement) {
-    case "remote":
+    case "Remote":
       return "Remote"
-    case "in-office":
-      return "In Office"
-    case "hybrid":
+    case "On-site":
+      return "On-site"
+    case "Hybrid":
       return "Hybrid"
     default:
       throw new Error(
@@ -36,12 +28,14 @@ export function formatLocationRequirement(
 
 export function formatExperienceLevel(experienceLevel: ExperienceLevel) {
   switch (experienceLevel) {
-    case "junior":
-      return "Junior"
-    case "mid-level":
+    case "Entry":
+      return "Entry Level"
+    case "Mid":
       return "Mid Level"
-    case "senior":
+    case "Senior":
       return "Senior"
+    case "Executive":
+      return "Executive"
     default:
       throw new Error(
         `Unknown experience level: ${experienceLevel satisfies never}`
@@ -51,11 +45,13 @@ export function formatExperienceLevel(experienceLevel: ExperienceLevel) {
 
 export function formatJobType(type: JobListingType) {
   switch (type) {
-    case "full-time":
+    case "FULL_TIME":
       return "Full Time"
-    case "part-time":
+    case "PART_TIME":
       return "Part Time"
-    case "internship":
+    case "CONTRACT":
+      return "Contract"
+    case "INTERNSHIP":
       return "Internship"
     default:
       throw new Error(`Unknown job type: ${type satisfies never}`)
@@ -75,23 +71,22 @@ export function formatJobListingStatus(status: JobListingStatus) {
   }
 }
 
-export function formatWage(wage: number, wageInterval: WageInterval) {
-  const wageFormatter = new Intl.NumberFormat("en-US", {
+// Nouvelle fonction pour formater les salaires AI
+export function formatAiSalary(minValue?: number | null, maxValue?: number | null, currency?: string | null) {
+  if (!minValue && !maxValue) return "Salary not specified"
+  
+  const currencyFormatter = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "USD",
+    currency: currency || "USD",
     minimumFractionDigits: 0,
   })
 
-  switch (wageInterval) {
-    case "hourly": {
-      return `${wageFormatter.format(wage)} / hr`
-    }
-    case "yearly": {
-      return wageFormatter.format(wage)
-    }
-    default:
-      throw new Error(`Unknown wage interval: ${wageInterval satisfies never}`)
+  if (minValue && maxValue && minValue !== maxValue) {
+    return `${currencyFormatter.format(minValue)} - ${currencyFormatter.format(maxValue)}`
   }
+  
+  const value = minValue || maxValue
+  return value ? currencyFormatter.format(value) : "Salary not specified"
 }
 
 export function formatJobListingLocation({

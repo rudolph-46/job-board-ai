@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "1884371038",
+    "date_posted": "2025-10-10T00:00:00",
+    "date_created": "2025-10-10T01:56:50.380782",
+    "title": "Digital Products Full Stack Developer(W/M/D)",
+    "organization": "Sidel Group",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "@type": "Place",
+        "Address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5-7 rue du Commerce",
+          "addressLocality": "Reichstett",
+          "addressRegion": "FRANCE",
+          "postalCode": "67116",
+          "addressCountry": {
+            "@type": "Country",
+            "Name": "FR"
+          }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "Latitude": 48.643001556396484,
+          "Longitude": 7.76546573638916
+        }
+      }
+    ],
+    "locations_alt_raw": null,
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": null,
+    "url": "https://sidelgroup.csod.com/ux/ats/careersite/2/home/requisition/5164?c=sidelgroup",
+    "source_type": "ats",
+    "source": "csod",
+    "source_domain": "sidelgroup.csod.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Reichstett"
+    ],
+    "regions_derived": [
+      "Grand Est"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": [
+      "Bas-Rhin"
+    ],
+    "locations_derived": [
+      "Reichstett, Grand Est, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.64226949313995
+    ],
+    "lngs_derived": [
+      7.765784401585031
+    ],
+    "remote_derived": false,
+    "domain_derived": "sidel.com",
+    "description_html": "<!DOCTYPE html>\r\n<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><head>\r\n\t<meta charset=\"utf-8\">\r\n\t<title>Job vacancies on Sidel.com</title>\r\n\t<style type=\"text/css\">\r\n\t\tbody, p { font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; color: #000;}\r\n\t\t.main { margin: 0 auto; max-width: 1140px; padding: 40px; }\r\n\t\t.place { font-size: 1.2em; text-transform: uppercase; margin-bottom: 20px; }\r\n\t\t.title { color: #E64C00; font-size: 2em; font-weight: bold; text-transform: uppercase; margin-bottom: 30px; }\r\n\t\t.subtitle { color: #E64C00; font-size: 1.2em; font-weight: bold; text-transform: uppercase; margin-top: 20px; margin-bottom: 20px; }ul { list-style: none; margin: 20px 0; padding: 0 0 0 1em; }\r\n\t\tli::before { content: \"\\25AA\"; color: #E64C00; display: inline-block; width: 1em; margin-left: -1em; }\r\n\t</style>\r\n</head>\r\n<body>\r\n\t<div class=\"main\">\r\n\t\t<div class=\"place\">Reichstett</div>\r\n\t\t<div class=\"title\">Digital Products Full Stack Developer(W/M/D)</div>\r\n\t\t<div class=\"subtitle\">YOUR OPPORTUNITY</div>\r\n\t\t<p>En tant que Digital Products Full Stack Developer(W/M/D), vous contribuerez directement au développement de nos produits digitaux innovants.\r\nVous collaborerez étroitement avec nos développeurs, testeurs, analystes et chefs de projets / produits pour concrétiser des solutions robustes, évolutives et bien intégrées à notre architecture globale.\r\n\r\nVous serez responsable du choix et de l’implémentation de solutions techniques optimales, de leur intégration dans notre infrastructure cloud (GCP), ainsi que de leur test, surveillance et documentation.</p>\r\n\t\t<div class=\"subtitle\">YOUR MISSION</div>\r\n\t\t<p><p>En tant que candidat idéal, vous travaillerez en étroite collaboration avec nos développeurs de logiciels, testeurs, analystes et chefs de projets / produits afin d'atteindre leurs objectifs de développement. Vous serez responsable du choix d'une solution optimale pour mettre en œuvre, tester, maintenir, surveiller et documenter votre travail. </p><p>Vous serez également responsable de leur intégration dans l'architecture du produit et dans l'infrastructure de l'entreprise.<br><br>Votre mission :<br><br>■■&nbsp; &nbsp;Concevoir, implémenter et tester le code en utilisant des technologies telles que Nest.js, Angular, HTML, JavaScript, CSS, SQL, BigQuery, Firebase et Google Cloud Platform (GCP);<br>■&nbsp; &nbsp;Être un défenseur de la qualité tout au long du processus de développement;<br>■&nbsp; &nbsp;Contribuer aux efforts en cours pour affiner et améliorer les processus internes de développement logiciel, les méthodologies de test et les outils de test internes;<br>■&nbsp; &nbsp;Créer et maintenir la documentation existante (ie: les exigences, les conceptions, les architectures, les “release notes”, les manuels d'utilisateur, etc.).</p></p>\r\n\t\t<div class=\"subtitle\">YOUR PROFILE</div>\r\n\t\t<p>&nbsp;Vous possédez au moins 2 ans d’expérience en développement logiciel modernes.<br><br>Vous maîtrisez Node.js ou NestJS, SQL, et avez une solide compréhension des architectures distribuées, des systèmes d’exploitation (Windows/Linux), et du cloud GCP.<br><br>Une expérience avec .NET (C#), Firebase, BigQuery ou le modèle publish-subscribe est un plus.&nbsp;<br><br>La maîtrise du français et de l’anglais est indispensable.</p>\r\n\t\r\n\t\t<p>\r\n\t\t\tBy applying to this vacancy, the applicant acknowledges and agrees to the processing of his/her personal data included in the job application.\r\n\t\t</p>\r\n\t</div>\r\n\r\n</body></html>",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": null,
+    "ai_experience_level": "2-5",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Full Stack Development",
+      "Node.js",
+      "Nest.js",
+      "SQL",
+      "Distributed Architectures",
+      "Windows",
+      "Linux",
+      "Cloud GCP",
+      "Firebase",
+      "BigQuery",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Software Testing",
+      "Documentation",
+      "Agile Methodologies"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "You will design, implement, and test code using various technologies while ensuring quality throughout the development process. Additionally, you will contribute to refining internal software development processes and maintain existing documentation.",
+    "ai_requirements_summary": "The ideal candidate should have at least 2 years of experience in modern software development and proficiency in Node.js or NestJS, SQL, and cloud infrastructure. Knowledge of .NET, Firebase, and BigQuery is a plus, along with fluency in French and English.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "French",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 5890,
+    "linkedin_org_url": "https://www.sidel.com",
+    "linkedin_org_size": "5,001-10,000 employees",
+    "linkedin_org_slogan": "Performance through Understanding",
+    "linkedin_org_industry": "Machinery Manufacturing",
+    "linkedin_org_followers": 186485,
+    "linkedin_org_headquarters": "Octeville-sur-Mer, Normandy",
+    "linkedin_org_type": "Privately Held",
+    "linkedin_org_foundeddate": "1965",
+    "linkedin_org_specialties": [
+      "Packaging Machinery",
+      "Food & Beverage",
+      "PET",
+      "can and glass packaging",
+      "and Dairy"
+    ],
+    "linkedin_org_locations": [
+      "76930, Avenue de la Patrouille de France, Octeville-sur-Mer, Normandy 76930, FR",
+      "via La Spezia 241/A, Parma , Parma  43126, IT"
+    ],
+    "linkedin_org_description": "Sidel is a leading provider of equipment and services solutions for packaging beverage, food, home and personal care products in PET, can, glass and other materials.\n \nWith over 40,000 machines installed in more than 190 countries, we have nearly 170 years of proven experience, with a strong focus on the factory of tomorrow with advanced systems, line engineering and innovation. Our 5,500+ employees worldwide are passionate about providing solutions that fulfil customer needs and boost the performance of their lines, products and businesses.\n \nDelivering this level of performance requires that we stay flexible. We continuously ensure we understand our customers’ changing challenges and commit to meeting their unique performance and sustainability goals. We do this through dialogue and by understanding the needs of their markets, production and value chains. In turn, we apply our solid technical knowledge and smart data analytics to ensure lifetime productivity reaches its full potential.\n \nWe call it Performance through Understanding.",
+    "linkedin_org_slug": "sidel"
+  },
+  {
+    "id": "1884151707",
+    "date_posted": "2025-10-09T17:37:31.14",
+    "date_created": "2025-10-09T18:44:15.44652",
+    "title": "Database & Infrastructure Engineer",
+    "organization": "G MASS",
+    "organization_url": "https://jobs.workable.com/company/91YsMDGMxxHFRTgqyt1Uj9/jobs-at-g-mass",
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Paris",
+          "addressRegion": "Île-de-France",
+          "addressCountry": "France"
+        }
+      }
+    ],
+    "locations_alt_raw": [
+      "Paris, Île-de-France, France"
+    ],
+    "location_type": "TELECOMMUTE",
+    "location_requirements_raw": [
+      {
+        "@type": "Country",
+        "name": "France"
+      }
+    ],
+    "salary_raw": null,
+    "employment_type": [
+      "CONTRACTOR"
+    ],
+    "url": "https://jobs.workable.com/view/2wJfW8rtc9jadoWFe4LxEo/hybrid-database-%26-infrastructure-engineer-in-paris-at-g-mass",
+    "source_type": "ats",
+    "source": "workable",
+    "source_domain": "jobs.workable.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Paris"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": null,
+    "locations_derived": [
+      "Paris, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.8534951
+    ],
+    "lngs_derived": [
+      2.3483915
+    ],
+    "remote_derived": true,
+    "domain_derived": "gmassconsulting.com",
+    "description_html": "<p>We are seeking an experienced engineer to join one of our Financial Services clients to deliver a database migration and infrastructure build as part of a wider platform implementation. The role involves end-to-end responsibility for building, integrating, and operationalising core systems. This role can be based in Paris, London or Geneva.</p><p></p><p>Responsibilities:</p><ul><li>Lead the setup, configuration, and optimisation of databases, including data migration and performance tuning. </li><li>Ensure seamless connectivity between SimCorp and other integrated platforms by establishing and validating network links. </li><li>Deliver on-premise infrastructure components in line with existing environments, maintaining consistency and operational standards. </li><li>Develop and configure interface connections, including: </li><ul><li>SWIFT Alliance: Configure BIC codes, message routing, and associated server environments. </li><li>External banking and client systems (e.g., NT, JPM, SS, and others – around 7 key connections). </li><li>Set up pipelines for email data extraction and exchange. </li></ul><li>Manage the full deployment lifecycle—from initial build and system testing through to final production rollout. </li><li>Work closely with teams across security, networking, applications, and project delivery, as well as with the Chief of Staff for Technology, to ensure all solutions meet compliance, security, and performance standards. </li><li>Create and maintain comprehensive documentation detailing system architecture, configurations, and testing outcomes.</li></ul>\n<ul><li>5+ years experience in infrastructure or database engineering within financial services.</li><li>Exposure to DORA, operational resilience, or regulated ICT environments.</li><li>Extensive experience with database implementation and migration (SQL Server, Oracle, or similar). </li><li>Solid track record in building and integrating on-prem infrastructure (Windows/Linux, storage, networking). </li><li>Practical expertise in configuring SWIFT Alliance and establishing bank connectivity. </li><li>Good understanding of network security, including firewalls, certificates, and messaging protocols. </li><li>Familiar with integrating financial systems such as SimCorp, custodians, fund administrators, and banks.</li></ul>\n<p>Salary: to be discussed depending on experience</p>",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": null,
+    "ai_experience_level": "5-10",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": [
+      "Paris, France",
+      "London, United Kingdom",
+      "Geneva, Switzerland"
+    ],
+    "ai_remote_location_derived": [
+      "Paris, Île-de-France, France",
+      ", London, City of, United Kingdom",
+      "Geneva, Genève, Switzerland"
+    ],
+    "ai_key_skills": [
+      "Database Engineering",
+      "Infrastructure Engineering",
+      "Data Migration",
+      "Performance Tuning",
+      "Network Connectivity",
+      "On-Premise Infrastructure",
+      "SWIFT Alliance",
+      "Email Data Extraction",
+      "System Testing",
+      "Documentation",
+      "Network Security",
+      "Financial Systems Integration",
+      "SQL Server",
+      "Oracle",
+      "Windows",
+      "Linux"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "The role involves leading the setup, configuration, and optimization of databases, ensuring seamless connectivity between platforms, and managing the full deployment lifecycle. The engineer will work closely with various teams to ensure compliance and performance standards are met.",
+    "ai_requirements_summary": "Candidates should have over 5 years of experience in infrastructure or database engineering within financial services and exposure to regulated ICT environments. Practical expertise in configuring SWIFT Alliance and a solid understanding of network security are also required.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "CONTRACTOR"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 12,
+    "linkedin_org_url": "https://gmass.net",
+    "linkedin_org_size": "11-50 employees",
+    "linkedin_org_slogan": "Leaders in Assessment, GIS & Data Solutions\n - www.gmass.net - ",
+    "linkedin_org_industry": "IT Services and IT Consulting",
+    "linkedin_org_followers": null,
+    "linkedin_org_headquarters": "",
+    "linkedin_org_type": "Privately Held",
+    "linkedin_org_foundeddate": "2008",
+    "linkedin_org_specialties": [
+      ""
+    ],
+    "linkedin_org_locations": [],
+    "linkedin_org_description": "Georgia Mass Appraisal Solutions & Services",
+    "linkedin_org_slug": "gmass-inc"
+  },
+  {
+    "id": "1884103714",
+    "date_posted": "2025-10-09T15:23:44",
+    "date_created": "2025-10-09T17:06:12.46588",
+    "title": "Project Manager (F/H)",
+    "organization": "Rakon France",
+    "organization_url": "https://rakonfrance-1714398798.teamtailor.com",
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "@type": "Place",
+        "address": {
+          "streetAddress": "2 Rue Robert Keller",
+          "addressLocality": "Pont-Sainte-Marie",
+          "postalCode": "10150",
+          "addressCountry": "FR",
+          "addressRegion": null,
+          "@type": "PostalAddress"
+        }
+      }
+    ],
+    "locations_alt_raw": null,
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": [
+      "FULL_TIME"
+    ],
+    "url": "https://rakonfrance-1714398798.teamtailor.com/jobs/6589223-project-manager-f-h",
+    "source_type": "ats",
+    "source": "teamtailor",
+    "source_domain": "rakonfrance-1714398798.teamtailor.com",
+    "organization_logo": "https://images.teamtailor-cdn.com/images/s3/teamtailor-production/logotype-v3/image_uploads/825dc68b-aa3c-4c8d-bfcd-1563da0a82e7/original.png",
+    "cities_derived": [
+      "Pont-Sainte-Marie"
+    ],
+    "regions_derived": [
+      "Great East"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": [
+      "Aube"
+    ],
+    "locations_derived": [
+      "Pont-Sainte-Marie, Great East, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.322231
+    ],
+    "lngs_derived": [
+      4.108868
+    ],
+    "remote_derived": false,
+    "domain_derived": "rakon.com",
+    "description_html": "&lt;p&gt;Rakon est l&#39;un des plus grands fabricants mondiaux de produits de contrôle de fréquence et de solutions de synchronisation. Nos solutions se trouvent au cœur des produits de haute technologie où la vitesse et la fiabilité sont primordiales. Qu&#39;il s&#39;agisse d&#39;infrastructures de télécommunications, de satellites dans l&#39;espace, d&#39;appareils de navigation ou d’applications IOT, les produits Rakon sont à la pointe de la connectivité, plus rapides et plus fiables. Notre équipe a une longue histoire d&#39;innovation réussie.&lt;/p&gt;&lt;p&gt;Rakon France, filiale d’un groupe basé en Nouvelle Zélande, est actuellement au cœur d&#39;une transformation pour accompagner sa croissance sur des nouveaux marchés.&lt;/p&gt;&lt;p&gt;En rejoignant nos équipes, vous ralliez une entreprise conviviale, bienveillante et tournée vers l&#39;avenir.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Les responsabilités seront les suivantes :&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Gestion générale du projet&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;·        Transformer les exigences en matière d&#39;équipement en exigences de projet&lt;/p&gt;&lt;p&gt;·        Identifier et comprendre les besoins des clients et définir les activités en lots de travail&lt;/p&gt;&lt;p&gt;·        Rédiger/appuyer le plan de développement du projet&lt;/p&gt;&lt;p&gt;·        Détailler et négocier la planification, les coûts et la qualité avec la direction&lt;/p&gt;&lt;p&gt;·        Gérer/soutenir la négociation et la signature des contrats&lt;/p&gt;&lt;p&gt;·        Rendre compte à la direction de l&#39;état des finances, de la planification et des risques du projet.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Interface avec le client&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;·        Diriger les relations avec le client&lt;/p&gt;&lt;p&gt;·        Rédiger des rapports de projet et communiquer l&#39;état d&#39;avancement à la direction et au client&lt;/p&gt;&lt;p&gt;·        Diriger/appuyer les revues de projet et les réunions (y compris avec le client)&lt;/p&gt;&lt;p&gt;·        Gérer les besoins du client et veiller à sa satisfaction tout en respectant la faisabilité technique et financière.&lt;/p&gt;&lt;p&gt;·        Veiller à ce que les projets soient livrés dans le respect des délais, des coûts et de la qualité.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Gestion des coûts du projet&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;·        Définir/négocier le budget du projet en collaboration avec les parties prenantes (R&amp;amp;D, qualité, production, sous-traitants, direction...)&lt;/p&gt;&lt;p&gt;·        Contrôler les dépenses du projet (heures et dépenses externes), les activités restantes et mettre à jour le budget du projet tous les mois.&lt;/p&gt;&lt;p&gt;·        S&#39;assurer que les dépenses du projet sont conformes au budget alloué&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Gestion de la planification du projet&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;·        Définir/négocier la planification du projet en collaboration avec les parties prenantes&lt;/p&gt;&lt;p&gt;·        Maintenir et mettre à jour la planification du projet tous les mois&lt;/p&gt;&lt;p&gt;·        Identifier les risques liés à la planification, le chemin critique et gérer les marges de planification&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Gestion des risques et des opportunités liés au proje&lt;/strong&gt;t&lt;/p&gt;&lt;p&gt;·        Définir/négocier/mettre à jour le registre des risques du projet en collaboration avec les parties prenantes.&lt;/p&gt;&lt;p&gt;·        Proposer, diriger et suivre les actions d&#39;atténuation des risques&lt;/p&gt;&lt;p&gt;·        Saisir les opportunités d&#39;amélioration du projet ou du processus&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Gestion de l&#39;équipe de projet et des sous-traitants&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;·        Définir les lots de travail et répartir les tâches&lt;/p&gt;&lt;p&gt;·        Maintenir une liste d&#39;actions et de tâches&lt;/p&gt;&lt;p&gt;·        Suivre les progrès de l&#39;équipe et des sous-traitants&lt;/p&gt;&lt;p&gt;·        Assurer la coordination de l&#39;équipe et des disciplines (système, matériel, logiciel, mécanique, thermique, qualité...)&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Processus et méthodologie de gestion de projet&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;·        Organiser le processus d&#39;apprentissage des projets et capitaliser pour les projets futurs&lt;/p&gt;&lt;p&gt;·        Participer à la définition de la mise en œuvre des processus de gestion de projet&lt;/p&gt;&lt;p&gt;·        Participer à la sélection des outils utilisés pour la gestion de projet&lt;/p&gt;&lt;p&gt;·        Participer aux meilleures pratiques et améliorations en matière de gestion de projet&lt;strong&gt;&lt;/strong&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Éducation et comportement :&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Vous êtes diplômé(e) d&#39;une école d&#39;ingénieur, avec quelques années d&#39;expérience professionnelle au sein d&#39;entreprises spatiales, et vous avez les compétences suivantes :&lt;br&gt;&lt;/p&gt;&lt;p&gt;·        Au moins 3 ans de gestion de projet&lt;/p&gt;&lt;p&gt;·        Compétences avérées en matière de budget, de planification et de gestion des risques&lt;/p&gt;&lt;p&gt;·        Connaissance des normes spatiales ECSS (ou similaires)&lt;/p&gt;&lt;p&gt;·        Développement du cycle en V&lt;/p&gt;&lt;p&gt;&amp;nbsp;·&amp;nbsp;Une bonne connaissance de la conception d&#39;équipements spatiaux serait un plus&lt;/p&gt;&lt;p&gt;·        MS Office&lt;/p&gt;&lt;p&gt;·        Maîtrise du français et de l&#39;anglais&lt;/p&gt;&lt;p&gt;·&amp;nbsp;Rigueur, organisation&lt;/p&gt;&lt;p&gt;&lt;strong&gt;·&amp;nbsp;&lt;/strong&gt;Esprit d’analyse, résolution de problèmes&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;strong&gt;· &lt;/strong&gt;&lt;/strong&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;Communication claire&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;· &lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt; Capacité à motiver, fédérer&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;&lt;strong&gt;· &lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;strong&gt; &lt;/strong&gt;Adaptabilité, flexibilité&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ce que nous offrons :&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Engagé mondialement en faveur de la durabilité et de l&#39;environnement, Rakon partage également des valeurs fortes : Passion, Respect, Courage, Persévérance et Intégrité.&lt;/li&gt;&lt;li&gt;Rémunération adaptée au profil et avantages sociaux (RTT/CET/Télétravail/CSE…)&lt;/li&gt;&lt;li&gt;Un environnement de travail stimulant et innovant au sein d&#39;une entreprise internationale de renom.&lt;/li&gt;&lt;li&gt;Des opportunités de formation et de développement professionnel.&lt;/li&gt;&lt;li&gt;Possibilité d&#39;évolution au sein de l&#39;entreprise.&lt;/li&gt;&lt;li&gt;Nous avons hâte de vous rencontrer et de discuter de votre avenir au sein de Rakon France !&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Rakon s’engage en faveur de l’égalité des chances : cette offre est ouverte aux personnes en situation de handicap.&lt;/p&gt;",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": [
+      "Remote Work",
+      "Training Opportunities",
+      "Professional Development",
+      "Social Benefits"
+    ],
+    "ai_experience_level": "2-5",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Project Management",
+      "Budget Management",
+      "Risk Management",
+      "Planning",
+      "Client Relations",
+      "Team Coordination",
+      "Communication",
+      "Problem Solving",
+      "Adaptability",
+      "Technical Feasibility",
+      "Quality Assurance",
+      "Negotiation",
+      "MS Office",
+      "Space Standards Knowledge",
+      "V-Cycle Development",
+      "French Language"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "The Project Manager will oversee project management activities, transforming equipment requirements into project specifications and managing client relationships. They will ensure projects are delivered on time, within budget, and meet quality standards.",
+    "ai_requirements_summary": "Candidates should have a degree in engineering and at least 3 years of project management experience, preferably in the aerospace sector. Strong skills in budget, planning, risk management, and knowledge of space standards are essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "French",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 1024,
+    "linkedin_org_url": "http://www.rakon.com/",
+    "linkedin_org_size": "501-1,000 employees",
+    "linkedin_org_slogan": "We enable lightning-speed connectivity, precision time & positioning anywhere",
+    "linkedin_org_industry": "Appliances, Electrical, and Electronics Manufacturing",
+    "linkedin_org_followers": null,
+    "linkedin_org_headquarters": "Auckland",
+    "linkedin_org_type": "Public Company",
+    "linkedin_org_foundeddate": "1967",
+    "linkedin_org_specialties": [
+      "Frequency control solutions",
+      "TCXO",
+      "OCXO",
+      "VCXO",
+      "XO",
+      "quartz crystals",
+      "GPS",
+      "network timing",
+      "synchronization",
+      "emergency beacons",
+      "telecommunications infrastructure",
+      "small cells",
+      "electronics",
+      "MEMS",
+      "SAW",
+      "gnss receivers",
+      "frequency control and timing for traditional space and newspace",
+      "and datacentres"
+    ],
+    "linkedin_org_locations": [
+      "8 Sylvia Park Road, Mt Wellington, Auckland, 1060, NZ",
+      "2 rue Robert Keller, Pont Sainte Marie, 10150 , FR",
+      "Le Marco Polo Bât. A1, 790 Av. du Dr Maurice Donat, Mougins, 06250, FR",
+      "Parc d'affaires − CARRE 92, 10 Avenue des Louvresses, Bât G3, Gennevilliers, 92230, FR",
+      "Building 2020, Ground Floor, Cambourne Park, Cambourne , Cambridge CB23 6DW , GB",
+      "7600 Dublin Blvd, Suite 220, Dublin,  CA 94568, US",
+      "Plot #9, KIADB Aerospace SEZ, KIADB Industrial Area, Devanahalli, Bengaluru, Karnataka 5621, IN",
+      "Room 801A Aerospace Building, 4019 Shennan Road, Futian District, Shenzhen, Guangdong 518048, CN",
+      "1 Sophia Road, #05-03 Peace Centre, Singapore, 228149, SG",
+      "#622 234 Hwangsaewool-Ro, Bundang-gu, Seongnam-si, Gyeonggi-Do 13595, KR",
+      "6F-4, No.171 Songde Road, Sinyi District, Taipei City, 110, TW"
+    ],
+    "linkedin_org_description": "Our frequency control products and timing solutions enable the lightning speed of 5G networks, precision positioning for autonomous vehicles, synchronisation for cloud computing and much more. Our products have even made it to Mars. Find out more about our company and the products that are at the heart of much of today’s communication and positioning technology.",
+    "linkedin_org_slug": "rakon"
+  },
+  {
+    "id": "1884029461",
+    "date_posted": "2025-10-09T15:23:32",
+    "date_created": "2025-10-09T15:40:02.147409",
+    "title": "Senior Digital Project Manager - Cloud Platform Engineering (f/m/d)",
+    "organization": "Decathlon Digital EN",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "",
+          "addressLocality": "Paris, Paris, France"
+        }
+      }
+    ],
+    "locations_alt_raw": null,
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/decathlontechnologyen/jobs/4683311101",
+    "source_type": "ats",
+    "source": "greenhouse",
+    "source_domain": "job-boards.eu.greenhouse.io",
+    "organization_logo": null,
+    "cities_derived": [
+      "Paris"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": null,
+    "locations_derived": [
+      "Paris, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.8588897
+    ],
+    "lngs_derived": [
+      2.3200410217200766
+    ],
+    "remote_derived": false,
+    "domain_derived": "decathlon.net",
+    "description_html": "&lt;h1&gt;&lt;strong&gt;Job Offer: Senior Digital Project Manager - Cloud Platform Engineering (H/F)&lt;/strong&gt;&lt;/h1&gt;\n&lt;h2&gt;&lt;strong&gt;About the Digital Platform Engineering (CPE) in Decathlon&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;At Decathlon, we believe in making the joys and benefits of sport accessible to everyone.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;This mission has to be insured by an efficient, scalable and secure Information System. The Cloud Platform Engineering (CPE), aims to address this need.&lt;/p&gt;\n&lt;p&gt;CPE is a cross-functional initiative spanning all areas and countries within Decathlon. It comprises teams focused on developer experience, providing technical solutions to accelerate application development, ensuring application stability and scalability, network management, observability, and cost optimization (FinOps).&lt;/p&gt;\n&lt;p&gt;We are a dynamic and evolving team, committed to innovation, collaboration, and delivering impactful solutions that directly contribute to Decathlon&#39;s success worldwide. At Decathlon, our core mission is to make the joys and benefits of sport accessible to all.&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;Your Mission : Senior Digital Project Manager&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;As a &lt;strong&gt;Senior Digital Project Manager&lt;/strong&gt;, you will be the orchestrator of complex, cross-functional infrastructure projects at the heart of our Cloud strategy. You will play a key role in building and evolving our technical foundations, ensuring alignment between business needs and the solutions implemented. Your mission is to deliver critical projects from design to production, adopting a resolutely agile approach.&lt;/p&gt;\n&lt;p&gt;Your taste for a challenge will be essential to navigate a rich, evolving, and international technical ecosystem. You will be responsible for the entire project lifecycle, from planning and execution to deployment and post-implementation support. This includes managing project scope, timelines, budgets, resources, and risks, while ensuring seamless coordination across different teams and stakeholders.&lt;/p&gt;\n&lt;h3&gt;&amp;nbsp;&lt;/h3&gt;\n&lt;h2&gt;&lt;strong&gt;What You&#39;ll Do&lt;/strong&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;End-to-End Project Management&lt;/strong&gt;: You will frame, plan, execute, and deliver cross-functional infrastructure projects (network, security, system, virtualization, public/private Cloud foundations) while respecting deadlines, budget, and expected quality.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Agile Management&lt;/strong&gt;: You will facilitate agile ceremonies (sprint planning, daily stand-ups, retrospectives) and ensure the follow-up of sprints and backlogs. You will be responsible for the correct use of &lt;strong&gt;Jira&lt;/strong&gt; and &lt;strong&gt;Confluence&lt;/strong&gt; to ensure fluid communication.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Cross-Functional Coordination&lt;/strong&gt;: You will interact daily with a multitude of technical teams (Architects, DevOps Engineers, Product Owners, Product Managers, Security, Network, Data) and non-technical teams (Purchasing, Legal) in an international context.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Technical Complexity Management&lt;/strong&gt;: You will have a deep understanding of the challenges of a hybrid and evolving infrastructure to anticipate dependencies, identify technical risks, and propose effective mitigation plans.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Communication and Reporting&lt;/strong&gt;: You will ensure clear and transparent communication on project progress to various stakeholders, including top management. You will create and maintain rigorous project documentation.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Continuous Improvement&lt;/strong&gt;: You will actively contribute to the improvement of our project management processes and be a source of proposals for technical and organizational optimizations.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;Who You Are&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;You are the ideal candidate if you combine technical expertise with leadership, and you thrive in dynamic environments.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Proven Experience&lt;/strong&gt;: You have a minimum of &lt;strong&gt;10 years of experience&lt;/strong&gt; in technical project management, with a significant part of it on large-scale infrastructure projects. You have confirmed experience in &lt;strong&gt;infrastructure&lt;/strong&gt;, &lt;strong&gt;cloud&lt;/strong&gt;, and a mastery of tools like &lt;strong&gt;Jira&lt;/strong&gt;.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Agile Expert&lt;/strong&gt;: You have a perfect command of Agile methodologies (Scrum, Kanban).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Solid Technical Foundations&lt;/strong&gt;: You have a very good understanding of modern infrastructure concepts, significant experience with at least one major Cloud provider (AWS, GCP), and solid knowledge of networks, systems, and virtualization. A sensitivity to DevOps/SecOps and FinOps practices is a plus.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Leadership and Relational Intelligence&lt;/strong&gt;: You have excellent skills in communicating, negotiating, and uniting multidisciplinary and multicultural teams. You know how to create a climate of trust and collaboration.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;International Context&lt;/strong&gt;: &lt;strong&gt;Fluent English&lt;/strong&gt; is essential, both spoken and written, to evolve in our global teams.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Personal Qualities&lt;/strong&gt;: You are stimulated by complexity, know how to adapt quickly to a constantly evolving technical and organizational environment, are structured and capable of managing several projects in parallel without losing sight of details. You are proactive and autonomous.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;Why Join Decathlon?&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;In a dynamic and constantly evolving environment, we know that our most valuable asset is our team. We are committed to fostering a workplace where every individual can thrive, grow, and have a tangible impact. We are not just offering a job; we are offering a career path where you can truly make a difference.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;A strategic role with a direct impact on the company&#39;s performance.&lt;/li&gt;\n&lt;li&gt;Stimulating technical challenges and innovative projects.&lt;/li&gt;\n&lt;li&gt;An international, collaborative, and agile work environment.&lt;/li&gt;\n&lt;li&gt;Opportunities for continuous development and training.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;If you are an experienced technical project manager, passionate about infrastructure and the Cloud, and you are looking for a new challenge where your expertise and leadership will be fully valued, then don&#39;t wait any longer! Join us!&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;DECATHLON DIGITAL CONTEXT&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;What if technology allowed us to push the boundaries and take sports experiences to new levels? That&#39;s exactly our goal at Decathlon Digital! We are a team of 5,000+ experts in software engineering, product management, data, cloud, and cybersecurity, distributed across Paris, Lille, and Amsterdam. Together, we are creating the largest digital sports platform, leveraging tech innovation from design to value chain optimization, connected experiences and product second life.&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;strong&gt;Changing the game for good&lt;/strong&gt;. We are in this for the love of sports. And like everything we love, we want it to last. That’s why we are embarking on a journey to create a more sustainable tech model, reducing our direct environmental impact while maintaining a safe, diverse, and inclusive space for all our people to learn and thrive together. Team up with us to design the digital future of sports.&lt;/p&gt;&lt;/div&gt;",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": null,
+    "ai_experience_level": "10+",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Project Management",
+      "Agile Methodologies",
+      "Cloud Infrastructure",
+      "Jira",
+      "Confluence",
+      "Cross-Functional Coordination",
+      "Technical Risk Management",
+      "Communication",
+      "Documentation",
+      "Continuous Improvement",
+      "Leadership",
+      "Relational Intelligence",
+      "Network Management",
+      "Security",
+      "Virtualization",
+      "DevOps",
+      "FinOps"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "You will manage the entire project lifecycle for cross-functional infrastructure projects, ensuring alignment between business needs and technical solutions. Your role includes planning, execution, deployment, and post-implementation support while maintaining communication with various stakeholders.",
+    "ai_requirements_summary": "The ideal candidate should have at least 10 years of experience in technical project management, particularly in large-scale infrastructure projects. A strong understanding of cloud technologies, agile methodologies, and excellent communication skills are essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 1449,
+    "linkedin_org_url": "https://digital.decathlon.net/",
+    "linkedin_org_size": "1,001-5,000 employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Software Development",
+    "linkedin_org_followers": null,
+    "linkedin_org_headquarters": "Croix",
+    "linkedin_org_type": "Privately Held",
+    "linkedin_org_foundeddate": "",
+    "linkedin_org_specialties": [
+      ""
+    ],
+    "linkedin_org_locations": [
+      "12 Rue de la Centenaire, Croix, FR",
+      "81, Rue de Clichy, Paris, Île-de-France 75009, FR",
+      "Amsterdam, NL"
+    ],
+    "linkedin_org_description": "Decathlon Digital: Powering sports for tomorrow.\n\nGuided by our corporate North Star – to move people through the wonders of sport – our goal is to enable Decathlon to become the biggest digital sports platform and open ecosystem, empowering sports lovers and athletes everywhere.\n\nWe design innovative software, data, security, and robotics solutions to deliver a seamless and secure ecosystem of sports products and services to our 400 million customers and users worldwide while enabling our 101,000+ teammates to thrive.\n\nJoin us on this journey to build the future of sports technology.",
+    "linkedin_org_slug": "decathlondigital"
+  },
+  {
+    "id": "1884015680",
+    "date_posted": "2025-10-09T15:04:44.19",
+    "date_created": "2025-10-09T15:09:04.876667",
+    "title": "Data Analyst (H/F/N)",
+    "organization": "Believe",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "address": {
+          "addressLocality": "Paris",
+          "addressCountry": "France"
+        }
+      }
+    ],
+    "locations_alt_raw": [
+      "Paris, France"
+    ],
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": [
+      "Full-time"
+    ],
+    "url": "https://jobs.smartrecruiters.com/Believe/744000086895553-data-analyst-h-f-n-",
+    "source_type": "ats",
+    "source": "smartrecruiters",
+    "source_domain": "jobs.smartrecruiters.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Paris"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": null,
+    "locations_derived": [
+      "Paris, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.8534951
+    ],
+    "lngs_derived": [
+      2.3483915
+    ],
+    "remote_derived": false,
+    "domain_derived": "believe.com",
+    "description_html": "<section class=\"job-section\" id=\"st-companyDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Company Description</h2></div><div class=\"wysiwyg\"><p>Believe is one of the world&#x2019;s leading digital music companies. Believe&#x2019;s mission is to develop local artists&#xa0;<br>\nand labels in the digital ecosystem by providing them the solutions they need to grow their audience at&#xa0;<br>\neach stage of their career and development.&#xa0;<br>\nIts 2,037 employees in more than 50 countries aim to support local artists and labels with a unique&#xa0;<br>\ndigital expertise, respect, fairness and transparency.&#xa0;<br>\nTo support our fast-growing presence on all continents, we are constantly looking for new Believers to&#xa0;<br>\njoin us and make a stronger and more positive impact on the music industry!<br>\nBelieve is listed on compartment A of the regulated market of Euronext Paris (Ticker: BLV, ISIN:&#xa0;<br>\nFR0014003FE9).<br>\nReady to #setthetone with Believe?</p></div></section><section class=\"job-section\" id=\"st-jobDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Job Description</h2></div><div class=\"wysiwyg\" itemprop=\"responsibilities\"><p>As a Data Analyst, you will support the Tech, Product, Marketing, Operations &amp; PMI teams by designing, maintaining, and optimizing data pipelines and dashboards that enable data-driven decision-making. You will be the go-to expert for ensuring the reliability of a key data mart, powering analytical models, and delivering actionable insights through Power BI.&#xa0;</p><p>You are methodical, curious, and comfortable with both technical and business topics. You thrive in fast-paced, evolving environments and value collaboration across teams.&#xa0;</p><p>Key Missions&#xa0;</p><ul><li><p>Monitoring &amp; Enhancement of a Data Mart&#xa0;<br>\nMaintain and improve a business-critical data mart. Monitor its performance and reliability, ensure data quality and consistency, and work with data engineering to scale it as needs evolve.&#xa0;</p></li></ul><ul><li><p>Creation &amp; Monitoring of a Calculation Pipeline&#xa0;<br>\nBuild and oversee robust calculation pipelines that power operational and financial analytics. Ensure outputs are consistent, traceable, and maintainable.&#xa0;</p></li></ul><ul><li><p>Dashboard Creation &amp; Stakeholder Support (Power BI)&#xa0;<br>\nDesign, develop, and maintain insightful dashboards using Power BI. Provide training and support to stakeholders, ensuring they can access and interpret data autonomously.&#xa0;</p></li></ul><p>Your Responsibilities&#xa0;</p><ul><li><p>Structure and document data flows and calculation logic&#xa0;</p></li></ul><ul><li><p>Perform detailed data quality analyses and troubleshoot anomalies&#xa0;</p></li></ul><ul><li><p>Collaborate closely with business teams to translate needs into data products&#xa0;</p></li></ul><ul><li><p>Support cost modeling, project tracking, and FinOps-related initiatives through your data assets&#xa0;</p></li></ul><ul><li><p>Act as a data steward: ensure clarity, consistency, and accessibility of key metrics&#xa0;</p></li></ul></div></section><section class=\"job-section\" id=\"st-qualifications\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Qualifications</h2></div><div class=\"wysiwyg\" itemprop=\"qualifications\"><ul><li><p>Proven experience as a Data Analyst or BI Analyst (2+ years preferred)&#xa0;</p></li></ul><ul><li><p>Advanced SQL skills and strong understanding of data warehousing concepts&#xa0;</p></li></ul><ul><li><p>Experience with Power BI (or similar tools like Tableau, Looker)&#xa0;</p></li></ul><ul><li><p>Comfortable working with calculation logic, KPIs, and cross-domain metrics&#xa0;</p></li></ul><ul><li><p>Autonomous, rigorous, and proactive communicator&#xa0;</p></li></ul><ul><li><p>Bonus: experience with Azure, Python, dbt, or cloud cost analytics&#xa0;</p></li></ul></div></section><section class=\"job-section\" id=\"st-additionalInformation\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Additional Information</h2></div><div class=\"wysiwyg\" itemprop=\"incentives\"><p><u><strong>SET THE TONE WITH US:</strong></u></p><p>&#x200b;Working at Believe means having individual and collective impact in a fast-growing company!&#xa0;&#xa0;&#x200b;</p><p>At all stages of their careers, Believers are an important part of what we are doing: shaping the future of the music industry.&#xa0;&#x200b;</p><p>We need teams that truly reflect the diversity of our clients: our international presence is an inspiring and enriching work environment for each one of us, with daily opportunities to connect with our colleagues all over the world.&#xa0;&#x200b;</p><p>&#x200b;We have two hearts at Believe - our People and our Artists.&#xa0;&#x200b;</p><p>We believe in THE POWER OF OUR PEOPLE, who grow every day to develop their potential&#x2026; We aim to provide our Believers with the best environment to thrive.&#xa0;&#x200b;</p><p>&#xa0;</p><p><u><strong>ROCK THE JOB&#xa0;</strong></u>&#x200b;</p><ul><li><p>Tailor-made training and coaching program&#xa0;&#x200b;</p></li><li><p>Remote working policy&#x200b;</p></li><li><p>A wellness program &quot;Pauses&quot; with many activities and animations in-house&#x200b;</p></li><li><p>Access to Eutelmed, a digital mental health and well-being platform that allows you to speak with an experienced psychologist&#x200b;</p></li><li><p>A healthy and eco-responsible company restaurant&#x200b;</p></li><li><p>Individual or family health insurance&#x200b;</p></li><li><p>CSE benefits&#xa0;&#x200b;</p></li><li><p>A rooftop&#x200b;</p></li><li><p>A gym with free classes&#x200b;</p></li></ul><p>&#x200b;</p><p><u><strong>SING IN HARMONY&#xa0;&#x200b;</strong></u></p><ul><li><p>Ambassador program: an employee&#xa0;volunteering initiative dedicated to all Believers interested in having a positive impact on Diversity, Equity &amp; Inclusion&#xa0;(DEI), wellbeing and the planet.&#x200b;</p></li><li><p>Implementation of the sustainable mobility package &#x201c;Forfait mobilit&#xe9; durable&#x201d; =&gt; Reimbursement of up to 600&#x20ac; for public transport/low carbon footprint&#x200b;</p></li><li><p>5 calendar days 2nd parent leave with 100% pay (in addition to the legal paternity or adoption leave)&#x200b;</p></li></ul><p>&#x200b;</p><p>We are committed to having a workforce that is representative of the community it serves at all levels of the organisation. We, therefore, welcome applications from all backgrounds and all sections of the community regardless of age, disability, gender, race, religion and sexual orientation.&#x200b;</p></div></section>",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": [
+      "Tailor-Made Training And Coaching Program",
+      "Remote Working Policy",
+      "Wellness Program",
+      "Access To Digital Mental Health Platform",
+      "Healthy And Eco-Responsible Company Restaurant",
+      "Individual Or Family Health Insurance",
+      "CSE Benefits",
+      "Rooftop",
+      "Gym With Free Classes"
+    ],
+    "ai_experience_level": "2-5",
+    "ai_work_arrangement": "Remote OK",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Data Analysis",
+      "SQL",
+      "Data Warehousing",
+      "Power BI",
+      "Calculation Logic",
+      "KPIs",
+      "Cross-Domain Metrics",
+      "Communication",
+      "Azure",
+      "Python",
+      "dbt",
+      "Cloud Cost Analytics"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "As a Data Analyst, you will support various teams by designing, maintaining, and optimizing data pipelines and dashboards. You will ensure the reliability of a key data mart and deliver actionable insights through Power BI.",
+    "ai_requirements_summary": "The role requires proven experience as a Data Analyst or BI Analyst, with advanced SQL skills and familiarity with data warehousing concepts. Experience with Power BI and a proactive communication style are also essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 3121,
+    "linkedin_org_url": "https://www.believe.com/",
+    "linkedin_org_size": "1,001-5,000 employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Musicians",
+    "linkedin_org_followers": 216792,
+    "linkedin_org_headquarters": "Paris, Île-de-France",
+    "linkedin_org_type": "Privately Held",
+    "linkedin_org_foundeddate": "",
+    "linkedin_org_specialties": [
+      "Music",
+      "Digital Distribution",
+      "Label Services",
+      "Video",
+      "Artist",
+      "Tech",
+      "Services",
+      "Analytics",
+      "and Marketing Services"
+    ],
+    "linkedin_org_locations": [
+      "24, Rue Toulouse-Lautrec, Paris, Île-de-France 75017, FR",
+      "2 and 2a Tileyard Road, London, N7 9AH, GB",
+      "Van-der-Smissen Straße 4, Hamburg, 22767, DE",
+      "Via Morimondo, 26, Milan, Lombardy 20143, IT",
+      "NYC, US",
+      "1444 Dupont St, Toronto, Ontario M6P 4H3, CA",
+      "Istanbul, TR",
+      "Sydney, AU",
+      "Pekin, CN",
+      "New Delhi, IN",
+      "Moscou, RU",
+      "Madrid, ES",
+      "Mexico, MX",
+      "Beyrouth, LB",
+      "Mathias-Brüggen Straße 85, Cologne, North Rhine-Westphalia 50829, DE"
+    ],
+    "linkedin_org_description": "Believe is one of the world’s leading digital music companies. Believe’s mission is to develop independent artists and labels in the digital world by providing them the solutions they need to grow their audience at each stage of their career and development. Believe’s passionate team of digital music experts around the world leverages the Group’s global technology platform to advise artists and labels, distribute and promote their music. Its 1,651 employees in more than 50 countries aim to support independent artists and labels with a unique digital expertise, respect, fairness and transparency. Believe offers its various solutions through a portfolio of brands including TuneCore, Nuclear Blast, Naïve, Groove Attack and AllPoints. Believe is listed on compartment A of the regulated market of Euronext Paris (Ticker: BLV, ISIN: FR0014003FE9). www.believe.com",
+    "linkedin_org_slug": "believeglobal"
+  },
+  {
+    "id": "1884017616",
+    "date_posted": "2025-10-09T15:02:48",
+    "date_created": "2025-10-09T15:18:40.322702",
+    "title": "Senior Digital Project Manager - Cloud Platform Engineering (f/m/d)",
+    "organization": "Decathlon Digital FR",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "",
+          "addressLocality": "Lille - Btwin Village, Nord, France"
+        }
+      },
+      {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "",
+          "addressLocality": "Paris, Paris, France"
+        }
+      }
+    ],
+    "locations_alt_raw": null,
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": null,
+    "url": "https://job-boards.eu.greenhouse.io/decathlontechnology/jobs/4683310101",
+    "source_type": "ats",
+    "source": "greenhouse",
+    "source_domain": "job-boards.eu.greenhouse.io",
+    "organization_logo": null,
+    "cities_derived": [
+      "Paris"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": null,
+    "locations_derived": [
+      "Paris, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.8588897
+    ],
+    "lngs_derived": [
+      2.3200410217200766
+    ],
+    "remote_derived": false,
+    "domain_derived": "decathlon.net",
+    "description_html": "&lt;h2&gt;&lt;strong&gt;Au sujet de la Cloud Platform Engineering (CPE) chez Decathlon&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Chez Decathlon, nous croyons qu&#39;il est essentiel de rendre les joies et &lt;strong&gt;les bienfaits du sport accessibles à tous&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;Cette mission doit être assurée par un &lt;strong&gt;système d&#39;information performant, évolutif et sécurisé&lt;/strong&gt;. La Cloud Platform Engineering (CPE) vise à répondre à ce besoin.&lt;br&gt;CPE est une initiative transversale couvrant &lt;strong&gt;tous les domaines et tous les pays de Decathlon&lt;/strong&gt;. Elle comprend des équipes axées sur l&#39;expérience des développeurs, fournissant des solutions&amp;nbsp;techniques pour accélérer le développement d&#39;applications, garantissant la stabilité et l&#39;évolution des applications, la gestion du réseau, l&#39;observabilité et l&#39;optimisation des coûts (FinOps).&lt;br&gt;&lt;br&gt;Nous sommes &lt;strong&gt;une équipe dynamique et évolutive&lt;/strong&gt;, engagée dans l&#39;&lt;strong&gt;innovation&lt;/strong&gt;, la &lt;strong&gt;collaboration&lt;/strong&gt; et la fourniture de solutions efficaces qui contribuent directement au succès de Decathlon dans le &lt;strong&gt;monde entier&lt;/strong&gt;.&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;Votre mission : Senior Digital Project Manager&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;En tant que &lt;strong&gt;Chef de Projet Digital Senior,&lt;/strong&gt; vous piloterez des projets d&#39;infrastructure complexes et transverses, &lt;strong&gt;au cœur de notre stratégie Cloud&lt;/strong&gt;. Vous jouerez un rôle clé dans la construction et l&#39;évolution de nos fondations techniques, en garantissant l&#39;adéquation entre les besoins métier et les solutions mises en œuvre. Votre mission est de mener à bien &lt;strong&gt;des projets critiques&lt;/strong&gt;, de la &lt;strong&gt;conception à la production&lt;/strong&gt;, en adoptant une approche résolument &lt;strong&gt;agile&lt;/strong&gt;.&lt;/p&gt;\n&lt;p&gt;Votre goût du défi sera essentiel pour évoluer au sein d&#39;un &lt;strong&gt;écosystème technique international&lt;/strong&gt;, riche et évolutif. Vous serez &lt;strong&gt;responsable de l&#39;ensemble du cycle de vie du projet&lt;/strong&gt;, de la planification et de l&#39;exécution au déploiement et au support post-implémentation. Cela comprend la gestion du périmètre, des délais, des budgets, des ressources et des risques du projet, tout en assurant une coordination fluide entre les différentes équipes et parties prenantes.&lt;/p&gt;\n&lt;h2&gt;&lt;strong&gt;Votre mission :&lt;/strong&gt;&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Gestion de projet de bout en bout :&lt;/strong&gt; Vous encadrerez, planifierez, exécuterez et livrerez des projets d’infrastructure transverses (réseau, sécurité, système, virtualisation, fondations cloud public/privé) tout en respectant les délais, le budget et la qualité attendue.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Management agile :&lt;/strong&gt; Vous animerez les cérémonies agiles (planification de sprint, réunions quotidiennes, rétrospectives) et assurerez le suivi des sprints et des backlogs. Vous serez responsable de l’utilisation correcte de Jira et Confluence pour garantir une communication fluide.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Coordination transverse :&lt;/strong&gt; Vous interagirez quotidiennement avec une multitude d’équipes techniques (architectes, ingénieurs DevOps, Product Owners, chefs de produit, sécurité, réseau, données) et non techniques (achats, service juridique) dans un contexte international.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Gestion de la complexité technique :&lt;/strong&gt; Vous maîtriserez parfaitement les enjeux d’une infrastructure hybride et évolutive afin d’anticiper les dépendances, d’identifier les risques techniques et de proposer des plans d’atténuation efficaces.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Communication et reporting :&lt;/strong&gt; Vous assurerez une communication claire et transparente sur l’avancement du projet auprès des différentes parties prenantes, y compris la direction. Vous créerez et maintiendrez une documentation de projet rigoureuse.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Amélioration continue :&lt;/strong&gt; Vous contribuerez activement à l’amélioration de nos processus de gestion de projet et serez force de proposition pour des optimisations techniques et organisationnelles.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;Qui êtes-vous ?&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Vous êtes le candidat idéal si vous combinez expertise technique et leadership et que vous vous épanouissez dans des environnements dynamiques.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Expérience confirmée :&lt;/strong&gt; Vous justifiez d’au moins 10 ans d’expérience en gestion de projets techniques, dont une part significative sur des projets d’infrastructure d’envergure. Vous justifiez d’une expérience confirmée en infrastructure, cloud et maîtrisez des outils comme Jira.&lt;br&gt;Expert Agile : Vous maîtrisez parfaitement les méthodologies Agile (Scrum, Kanban).&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Bases techniques solides :&lt;/strong&gt; Vous avez une très bonne compréhension des concepts d’infrastructure modernes, une expérience significative avec au moins un fournisseur cloud majeur (AWS, GCP) et une solide connaissance des réseaux, des systèmes et de la virtualisation. Une sensibilité aux pratiques DevOps/SecOps et FinOps est un atout.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Leadership et intelligence relationnelle :&lt;/strong&gt; Vous possédez d’excellentes compétences en communication, négociation et cohésion d’équipes multidisciplinaires et multiculturelles. Vous savez créer un climat de confiance et de collaboration.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Contexte international :&lt;/strong&gt; La maîtrise de l’anglais est essentielle, à l’oral comme à l’écrit, pour évoluer au sein de nos équipes internationales.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Qualités personnelles :&lt;/strong&gt; Vous êtes stimulé par la complexité, savez vous adapter rapidement à un environnement technique et organisationnel en constante évolution, êtes structuré et capable de gérer plusieurs projets en parallèle sans perdre de vue les détails.&lt;/li&gt;\n&lt;li&gt;Vous êtes &lt;strong&gt;proactif et autonome&lt;/strong&gt;.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2&gt;&lt;strong&gt;Pourquoi rejoindre Décathlon ?&lt;/strong&gt;&lt;/h2&gt;\n&lt;p&gt;Dans un environnement dynamique et en constante évolution, nous savons que notre équipe est notre atout le plus précieux. Nous nous engageons à créer un environnement de travail où chacun peut s&#39;épanouir, grandir et avoir un impact concret. Nous ne vous proposons pas seulement un emploi ; nous vous proposons un parcours professionnel où vous pourrez réellement faire la différence.&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Un rôle stratégique avec un impact direct sur la performance de l&#39;entreprise.&lt;/li&gt;\n&lt;li&gt;Des défis techniques stimulants et des projets innovants.&lt;/li&gt;\n&lt;li&gt;Un environnement de travail international, collaboratif et agile.&lt;/li&gt;\n&lt;li&gt;Des opportunités de développement et de formation continue.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Vous êtes un chef de projet technique expérimenté, passionné par l&#39;infrastructure et le Cloud, et vous recherchez un nouveau défi où votre expertise et votre leadership seront pleinement valorisés ? Alors, n&#39;attendez plus ! Rejoignez-nous !&lt;/p&gt;&lt;div class=&quot;content-conclusion&quot;&gt;&lt;p&gt;&lt;strong&gt;DECATHLON DIGITAL&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Imaginez si la technologie nous permettait de repousser les frontières et d&#39;offrir des expériences sportives inédites. C&#39;est précisément notre ambition chez Decathlon Digital ! Nous sommes une équipe de plus de 5 000 experts en ingénierie logicielle, gestion de produits, données, cloud et cybersécurité, répartis à Paris, Lille et Amsterdam. Ensemble, nous créons la plus vaste plateforme sportive numérique, en exploitant les innovations technologiques pour optimiser la chaîne de valeur, concevoir des expériences connectées et donner une seconde vie à nos produits.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Changeons la donne pour de bon.&lt;/strong&gt; Notre passion du sport nous guide et nous voulons qu’elle perdure. C’est pourquoi nous nous engageons à bâtir un modèle technologique plus durable, en réduisant notre impact direct sur l&#39;environnement, et en créant un espace sûr et inclusif pour apprendre et nous épanouir ensemble. Rejoins l’équipe et façonnons le futur du sport.&lt;/p&gt;&lt;/div&gt;",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": null,
+    "ai_experience_level": "10+",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Project Management",
+      "Agile Methodologies",
+      "Cloud Infrastructure",
+      "Jira",
+      "Confluence",
+      "Network Management",
+      "Security Management",
+      "Virtualization",
+      "DevOps",
+      "SecOps",
+      "FinOps",
+      "Communication",
+      "Leadership",
+      "Risk Management",
+      "Stakeholder Coordination",
+      "Continuous Improvement"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "You will lead complex infrastructure projects at the heart of Decathlon's Cloud strategy, ensuring alignment between business needs and implemented solutions. Your role includes managing the entire project lifecycle, from planning and execution to deployment and post-implementation support.",
+    "ai_requirements_summary": "The ideal candidate has at least 10 years of experience in technical project management, particularly in large-scale infrastructure projects, and is proficient in Agile methodologies. Strong technical foundations in modern infrastructure concepts and experience with major cloud providers are essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "French",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 1449,
+    "linkedin_org_url": "https://digital.decathlon.net/",
+    "linkedin_org_size": "1,001-5,000 employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Software Development",
+    "linkedin_org_followers": null,
+    "linkedin_org_headquarters": "Croix",
+    "linkedin_org_type": "Privately Held",
+    "linkedin_org_foundeddate": "",
+    "linkedin_org_specialties": [
+      ""
+    ],
+    "linkedin_org_locations": [
+      "12 Rue de la Centenaire, Croix, FR",
+      "81, Rue de Clichy, Paris, Île-de-France 75009, FR",
+      "Amsterdam, NL"
+    ],
+    "linkedin_org_description": "Decathlon Digital: Powering sports for tomorrow.\n\nGuided by our corporate North Star – to move people through the wonders of sport – our goal is to enable Decathlon to become the biggest digital sports platform and open ecosystem, empowering sports lovers and athletes everywhere.\n\nWe design innovative software, data, security, and robotics solutions to deliver a seamless and secure ecosystem of sports products and services to our 400 million customers and users worldwide while enabling our 101,000+ teammates to thrive.\n\nJoin us on this journey to build the future of sports technology.",
+    "linkedin_org_slug": "decathlondigital"
+  },
+  {
+    "id": "1884009895",
+    "date_posted": "2025-10-09T14:55:41.477",
+    "date_created": "2025-10-09T14:57:07.809757",
+    "title": "Consultant, Sénior, Business Data analyst (H/F)",
+    "organization": "MAZARS",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "address": {
+          "streetAddress": "Rue Kléber 45",
+          "addressLocality": "Levallois-Perret",
+          "addressRegion": "Île-de-France",
+          "postalCode": "92300",
+          "addressCountry": "France"
+        }
+      }
+    ],
+    "locations_alt_raw": [
+      "45 Rue Kléber, 92300 Levallois-Perret, France"
+    ],
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": [
+      "Temps complet"
+    ],
+    "url": "https://jobs.smartrecruiters.com/MAZARS/744000086893788-consultant-senior-business-data-analyst-h-f-",
+    "source_type": "ats",
+    "source": "smartrecruiters",
+    "source_domain": "jobs.smartrecruiters.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Levallois-Perret"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": [
+      "Hauts-de-Seine"
+    ],
+    "locations_derived": [
+      "Levallois-Perret, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.893974492
+    ],
+    "lngs_derived": [
+      2.284005768
+    ],
+    "remote_derived": false,
+    "domain_derived": "forvismazars.ie",
+    "description_html": "<section class=\"job-section\" id=\"st-companyDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Description de l&apos;entreprise</h2></div><div class=\"wysiwyg\"><p>Forvis Mazars est un groupe international d&apos;audit, de fiscalit&#xe9; et de conseil. Avec + de 40 000 collaborateurs pr&#xe9;sents dans une centaine de pays, nous faisons partie du Top 10 des cabinets mondiaux. Nous faisons des m&#xe9;tiers s&#xe9;rieux... sans se prendre au s&#xe9;rieux. Faire partie de nos &#xe9;quipes, c&apos;est avant tout assumer sa singularit&#xe9; et oser partager ses id&#xe9;es, dans une ambiance de travail que nous vous invitons &#xe0; d&#xe9;couvrir. Si vous souhaitez construire votre propre parcours et que vous aimez entreprendre, vous &#xea;tes au bon endroit !&#xa0;</p></div></section><section class=\"job-section\" id=\"st-jobDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Description du poste</h2></div><div class=\"wysiwyg\" itemprop=\"responsibilities\"><p>Vous int&#xe9;grerez une &#xe9;quipe dynamique et experte, compos&#xe9;e de Business Analysts, Data Analysts, Data Engineers et Data Scientists. Nous combinons expertises techniques et compr&#xe9;hension fine des enjeux m&#xe9;tiers pour concevoir des solutions sur mesure et innovantes.<br>\nChez Forvis Mazars, nous transformons des donn&#xe9;es complexes en insights strat&#xe9;giques, et nous aidons nos clients &#xe0; exploiter pleinement leur potentiel data.</p><p>En tant que&#xa0;<strong>Senior Consultant - Data Analyst / Business Analyst</strong>, vous serez un acteur cl&#xe9; de la transformation digitale de nos clients :</p><p>&#xa0;</p><ul><li>&#xa0;Analyse de donn&#xe9;es &amp; mod&#xe9;lisation</li></ul><p>&#x2022; Explorer et analyser des jeux de donn&#xe9;es complexes pour en extraire des tendances actionnables.<br>\n&#x2022; Identifier des patterns cach&#xe9;s, des anomalies et des opportunit&#xe9;s d&#x2019;optimisation.<br>\n&#x2022; D&#xe9;velopper des mod&#xe8;les analytiques avanc&#xe9;s pour r&#xe9;pondre aux m&#xe9;tiers probl&#xe9;matiques.<br>\n&#x2022; Mettre en place et optimiser des solutions BI et datawarehouses, en appliquant les meilleures pratiques de mod&#xe9;lisation de donn&#xe9;es (mod&#xe9;lisation en &#xe9;toile, flocon, etc.).<br>\n&#x2022; Assurer la qualit&#xe9; et la fiabilit&#xe9; des donn&#xe9;es, en identifiant et corrigeant les incoh&#xe9;rences.</p><ul><li>Conception de solutions analytiques &amp; dataviz</li></ul><p>&#x2022; Concevoir et optimiser des dashboards interactifs et des visualisations percutantes pour faciliter la prise de d&#xe9;cision.<br>\n&#x2022; Garantir une UX/UI efficace et intuitive pour maximiser l&#x2019;adoption des outils analytiques.</p><ul><li>&#xa0;Pilotage de projets &amp; coordination</li></ul><p>&#x2022; Assurer la gestion et le suivi des projets data en m&#xe9;thode agile.<br>\n&#x2022; Coordonner les diff&#xe9;rentes parties prenantes : m&#xe9;tiers, IT, data engineers, data scientists.<br>\n&#x2022; D&#xe9;finir la strat&#xe9;gie de tests et recettes pour garantir la qualit&#xe9; des livrables.<br>\n&#x2022; Former et encadrer les consultants juniors pour assurer un transfert de comp&#xe9;tences efficace.</p><ul><li>&#xa0;D&#xe9;veloppement commercial &amp; proposition de valeur</li></ul><p>&#x2022; Contribuer &#xe0; la r&#xe9;daction de propositions commerciales et aux r&#xe9;ponses aux appels d&#x2019;offres.<br>\n&#x2022; Identifier de nouvelles opportunit&#xe9;s business chez nos clients et soutenir la croissance du cabinet.<br>\n&#x2022; Animer des formations internes et clients sur les outils analytiques (Power BI, SQL, etc.).</p></div></section><section class=\"job-section\" id=\"st-qualifications\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Qualifications</h2></div><div class=\"wysiwyg\" itemprop=\"qualifications\"><p>Nous recherchons un consultant exp&#xe9;riment&#xe9;, capable d&#x2019;allier compr&#xe9;hension m&#xe9;tier et expertise technique.<br>\n<br>\n&#x2022; Bac+5 (ing&#xe9;nieur, commerce, universit&#xe9;) avec sp&#xe9;cialisation en data, analytics ou finance.<br>\n&#x2022; 3+ ans d&#x2019;exp&#xe9;rience en analyse de donn&#xe9;es, business intelligence ou data consulting.</p><p>Comp&#xe9;tences techniques</p><p>&#x2022; Ma&#xee;trise avanc&#xe9;e de SQL, Power BI, Python et des outils de manipulation et visualisation de donn&#xe9;es.<br>\n&#x2022; Exp&#xe9;rience dans la mod&#xe9;lisation de donn&#xe9;es et la mise en place de solutions BI avanc&#xe9;es.<br>\n&#x2022; Bonne connaissance des architectures analytiques et des flux de donn&#xe9;es.<br>\n&#x2022; Certifications Power BI, Tableau ou outils ETL (Alteryx, Dataiku) appr&#xe9;ci&#xe9;es.</p><p>Comp&#xe9;tences fonctionnelles &amp; soft skills<br>\n&#x2022; Capacit&#xe9; &#xe0; interagir avec les m&#xe9;tiers (finance, supply chain, RH, op&#xe9;rations...).<br>\n&#x2022; Esprit analytique, rigueur et orientation r&#xe9;sultats.<br>\n&#x2022; Exp&#xe9;rience en gestion de projet agile et animation d&#x2019;ateliers m&#xe9;tier.<br>\n&#x2022; Autonomie, leadership et aisance relationnelle.</p><p>&#xa0;</p><p><strong>Informations compl&#xe9;mentaires :</strong></p><p>Nous proposons &#xe0; chacun de nos collaborateurs :</p><p>&#x2022; Plan Epargne Entreprise avec Prime d&#x2019;Int&#xe9;ressement et Participation annuelles importantes,<br>\n&#x2022; 8 semaines de cong&#xe9;s / an<br>\n&#x2022; Charte de t&#xe9;l&#xe9;travail flexible (possibilit&#xe9; de t&#xe9;l&#xe9;travailler 1 &#xe0; 2 jours par semaine, les d&#xe9;placements en client&#xe8;le restant une priorit&#xe9;)<br>\n&#x2022; Nombreuses actions en faveur de l&#x2019;&#xe9;quilibre pro/perso (parentalit&#xe9;, Mazars Break, Cong&#xe9; solidaire, etc.),<br>\n&#x2022; Forfait mobilit&#xe9; durable pour accompagner vos d&#xe9;placements domicile-travail selon vos besoins,<br>\n&#x2022; Environnement de travail attractif et tout confort. D&#xe8;s 2025, un nouveau Campus &#xe0; Levallois (5 min &#xe0; pied du m&#xe9;tro) : salle de sport, espaces verts, roof top, terrasses, restauration, conciergerie...<br>\n&#x2022; CSE (offre sportive, cin&#xe9;ma, art et culture, cadeaux de fin d&#x2019;ann&#xe9;e, soir&#xe9;e annuelle, etc...),<br>\n&#x2022; Mutuelle modulable selon vos besoins<br>\n&#x2022; Association sportive (groupes de running, foot, basket, golf, tennis, ou encore yoga, etc.)<br>\n&#x2022; PC portable, double &#xe9;cran et Iphone<br>\n&#x2022; Carte American Express pour vos frais professionnels</p><p><br>\n<strong>D&#xe9;roul&#xe9; du process : &#xa0;</strong><br>\nLaury-Anne POUNOUSSAMY est en charge de ce recrutement, elle sera votre point de contact tout au long de votre process. &#xa0;</p><p>Vous serez contact&#xe9;(e) pour passer 3 entretiens d&apos;1h r&#xe9;partis sur 3 semaines environ :<br>\n<br>\n- 1 entretien technique avec un consultant de l&#x2019;&#xe9;quipe<br>\n- 1 entretien avec l&#x2019;associ&#xe9; Data<br>\n- 1 entretien RH et motivations avec un charg&#xe9; de recrutement</p><p>#LI-LP1</p></div></section><section class=\"job-section\" id=\"st-additionalInformation\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Informations compl&#xe9;mentaires</h2></div><div class=\"wysiwyg\" itemprop=\"incentives\"><p>&#xa0;</p><ul></ul></div></section>",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": [
+      "Employee Savings Plan with Significant Annual Profit Sharing and Participation",
+      "8 Weeks of Vacation per Year",
+      "Flexible Telework Policy",
+      "Numerous Actions for Work-Life Balance",
+      "Sustainable Mobility Package",
+      "Attractive and Comfortable Work Environment",
+      "CSE (Sport, Cinema, Art and Culture Offers)",
+      "Modular Health Insurance",
+      "Sports Association"
+    ],
+    "ai_experience_level": "2-5",
+    "ai_work_arrangement": "Hybrid",
+    "ai_work_arrangement_office_days": 2,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Data Analysis",
+      "Business Intelligence",
+      "Data Consulting",
+      "SQL",
+      "Power BI",
+      "Python",
+      "Data Visualization",
+      "Data Modeling",
+      "Agile Project Management",
+      "Stakeholder Coordination",
+      "Dashboard Design",
+      "Data Quality Assurance",
+      "Training and Mentoring",
+      "Commercial Proposal Writing",
+      "Opportunity Identification",
+      "UX/UI Design"
+    ],
+    "ai_hiring_manager_name": "Laury-Anne POUNOUSSAMY",
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "As a Senior Consultant, you will analyze complex datasets to extract actionable insights and develop advanced analytical models. You will also coordinate data projects using agile methodologies and ensure the quality of deliverables while mentoring junior consultants.",
+    "ai_requirements_summary": "Candidates should have a Bac+5 degree with a specialization in data, analytics, or finance and at least 3 years of experience in data analysis or business intelligence. Proficiency in SQL, Power BI, and Python, along with strong analytical and project management skills, is essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "French",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 2391,
+    "linkedin_org_url": "https://www.forvismazars.com/group/en",
+    "linkedin_org_size": "10,001+ employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Accounting",
+    "linkedin_org_followers": null,
+    "linkedin_org_headquarters": "",
+    "linkedin_org_type": "Partnership",
+    "linkedin_org_foundeddate": "",
+    "linkedin_org_specialties": [
+      ""
+    ],
+    "linkedin_org_locations": [],
+    "linkedin_org_description": "Forvis Mazars is a leading global professional services network operating under a single brand with just two members: Forvis Mazars, LLP in the United States and Forvis Mazars Group SC, an internationally integrated partnership operating in over 100 countries and territories.",
+    "linkedin_org_slug": "forvis-mazars"
+  },
+  {
+    "id": "1884007620",
+    "date_posted": "2025-10-09T14:51:02.671",
+    "date_created": "2025-10-09T14:53:10.42936",
+    "title": "Data Analyst PI Apprentice",
+    "organization": "Deezer",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "address": {
+          "streetAddress": "Rue de Calais 24",
+          "addressLocality": "Paris",
+          "addressRegion": "Île-de-France",
+          "postalCode": "75009",
+          "addressCountry": "France"
+        }
+      }
+    ],
+    "locations_alt_raw": [
+      "24 Rue de Calais, 75009 Paris, France"
+    ],
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": [
+      "Intern"
+    ],
+    "url": "https://jobs.smartrecruiters.com/Deezer/744000086893425-data-analyst-pi-apprentice",
+    "source_type": "ats",
+    "source": "smartrecruiters",
+    "source_domain": "jobs.smartrecruiters.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Paris"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": [
+      "Paris"
+    ],
+    "locations_derived": [
+      "Paris, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.8828877
+    ],
+    "lngs_derived": [
+      2.3300763
+    ],
+    "remote_derived": false,
+    "domain_derived": "deezer.com",
+    "description_html": "<section class=\"job-section\" id=\"st-companyDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Company Description</h2></div><div class=\"wysiwyg\"><p><strong>LIVE THE MUSIC WITH US&#xa0; </strong><br>\n&#xa0;</p><p>From a pioneer tech start-up created in 2007, Deezer has become one of the first French unicorns and the second largest independent music streaming platform in the world.</p><p>At eighteen years old, we&#x2019;re only just coming of age. Now listed on #EuroNext, Deezer is a rapidly-growing, cutting-edge player in the music streaming market. If you want an environment where you can make your voice heard and be at the forefront of music and tech, look no further!</p><p>We believe music is all about embracing the things that make us different.&#xa0;</p><p>Deezer is a vibrant community that celebrates uniqueness, diversity and individuality, and thrives on collaboration.</p><p>Our international and passionate teams pride themselves on being at the forefront of the music experience, going beyond streaming and helping the world to Live the Music. We&#x2019;re constantly evolving alongside our customers, partners, artists and employees &#x2014; striving to make Deezer the most personal and innovative streaming service in the world.&#xa0;&#xa0;</p><p>Ready for an electrifying journey? Apply now and do your part in bringing extraordinary music experiences to people&#x2019;s lives!</p><p>&#xa0;</p><p>**<a href=\"https://deezer.page.link/XwavMxpHmtd9ByU97\">Join Us</a>**</p><p>&#xa0;</p></div></section><section class=\"job-section\" id=\"st-jobDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Job Description</h2></div><div class=\"wysiwyg\" itemprop=\"responsibilities\"><p><strong>Starting in January 2026 </strong></p><p>Partnerships are at the heart of our DNA and are one of the main drivers of our growth: today we are partnering with leading brands like Sonos, Orange, Google Home, T-Mobile, Fnac or Amazon Alexa..</p><p>The Partnership Analyst Apprentice is part of the B2B Data squad in charge of monitoring deals&#x2019; performance, provide insights to XFN teams, contribute to product &amp; partnership strategy, design and manage tracking plan,&#xa0; deliver dashboards and tools, investigate data discrepancies and act as the main point of contact for partners to discuss KPI</p><p>What you will do:</p><ul><li><p>Providing data visualisation and reports to PI teams and Partners&#xa0;</p></li><li><p>Helping building product strategy and improvements through data analysis</p></li><li><p>Collaborating with various teams such as Product and Tech, Commercial, Finance and Data</p></li><li><p>Translating data into partner value and business recommendations</p></li><li><p>Helping creating data processes and strategy for the PI team</p></li></ul></div></section><section class=\"job-section\" id=\"st-qualifications\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Qualifications</h2></div><div class=\"wysiwyg\" itemprop=\"qualifications\"><p>This role is excellent for a person with:</p><ul><li><p>Business/Engineering school candidates seeking for apprenticeship</p></li><li><p>Experience in SQL and curious to learn (you will be tested during the interview process).</p></li><li><p>Experience in Data Visualization (e.g., Tableau, Looker)</p></li><li><p>Capable of tackling complex problems through insightful analysis, at the intersection of technology, product, and business.&#xa0;</p></li><li><p>Possesses a rigorous, structured approach with keen attention to detail.</p></li><li><p>Demonstrates a genuine interest in the music/tech industry! :)</p></li></ul><p><strong>At Deezer, diversity drives innovation. Whatever makes you uniquely you, your experiences, your way of thinking, your journey, might be exactly what we need.</strong><br>\n<strong>If this role speaks to you and aligns with your interests and capabilities, even if you don&#x2019;t meet 100% of the qualifications listed, please give it a try and tell us more! #BeYou</strong></p></div></section><section class=\"job-section\" id=\"st-additionalInformation\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Additional Information</h2></div><div class=\"wysiwyg\" itemprop=\"incentives\"><p>At Deezer, you can be your true self as we believe that #everyvoicematters. We strive to build an inclusive culture and foster a diverse environment. Because we care and want to ensure each employee feels welcome and safe at work, we continuously focus on fighting biases and helping diverse teams work well together through multiple learning opportunities, e-learnings and workshops right from the onboarding :</p><ul><li>Regular Diversity &amp; Inclusion internal and external talks</li><li>Dedicated employee work streams on Gender equity, Ethnicity &amp; Culture, Disability and LGBTQ+</li><li>Multiple e-learnings and mandatory training sessions for all managers</li><li>English and French courses for all, so that everyone can connect and feel included</li></ul><p>Beyond benefits like health insurance and transportation, we offer you extra perks like:</p><ul><li>A Deezer premium family account for free</li><li>Access to gym classes</li><li>Join over 70 Deezer Communities to connect beyond your day-to-day work, share passions, learn from each other and #Belong</li><li>Deezer parties several times a year and drinks every thursday</li><li>Allowance for sports, travelling and culture</li><li>Meal vouchers</li><li>Mental health and well-being support from Moka.Care&#xa0;</li><li>Great offices always located in dynamic and attractive districts, whether in Paris, London or Sao Paulo!</li><li>Hybrid remote work policy</li></ul><p><strong>If you want to learn more about life and culture at Deezer, please visit our Welcome to the Jungle page </strong><a href=\"https://www.welcometothejungle.com/fr/companies/deezer\"><strong>here</strong></a><strong>!</strong></p></div></section>",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": [
+      "Health Insurance",
+      "Transportation",
+      "Deezer Premium Family Account",
+      "Access To Gym Classes",
+      "Allowance For Sports",
+      "Travelling And Culture",
+      "Meal Vouchers",
+      "Mental Health And Well-Being Support"
+    ],
+    "ai_experience_level": "0-2",
+    "ai_work_arrangement": "Hybrid",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "SQL",
+      "Data Visualization",
+      "Tableau",
+      "Looker",
+      "Data Analysis",
+      "Problem Solving",
+      "Attention To Detail",
+      "Collaboration",
+      "Data Processes",
+      "Business Recommendations",
+      "Product Strategy",
+      "KPI Monitoring",
+      "Dashboard Creation",
+      "Data Discrepancy Investigation",
+      "Cross-Functional Teamwork",
+      "Music Industry Knowledge"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "The Partnership Analyst Apprentice will monitor deals' performance, provide insights to cross-functional teams, and contribute to product and partnership strategy. They will also design and manage tracking plans, deliver dashboards, and act as the main point of contact for partners to discuss KPIs.",
+    "ai_requirements_summary": "Candidates should be from a business or engineering school and have experience in SQL and data visualization tools like Tableau or Looker. A genuine interest in the music and tech industry is also essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "INTERN"
+    ],
+    "ai_job_language": "English",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 1053,
+    "linkedin_org_url": "http://www.deezerjobs.com/en/",
+    "linkedin_org_size": "501-1,000 employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Musicians",
+    "linkedin_org_followers": 190702,
+    "linkedin_org_headquarters": "Paris, Île-de-France",
+    "linkedin_org_type": "Public Company",
+    "linkedin_org_foundeddate": "2007",
+    "linkedin_org_specialties": [
+      "Internet",
+      "Music Streaming",
+      "Music",
+      "Social Music",
+      "Mobile",
+      "Home of Music",
+      "Recommendation Technology",
+      "Live Streaming",
+      "Streaming Tech",
+      "Artist Relations",
+      "and Content Curation"
+    ],
+    "linkedin_org_locations": [
+      "24, Rue de Calais, Paris, Île-de-France 75009, FR",
+      "Berghem Mews, London, England W14 0, GB",
+      "Neue Schönhauser Straße, Berlin, 10178, DE"
+    ],
+    "linkedin_org_description": "Deezer is one of the world’s largest independent music experiences platforms, connecting fans with artists and creating ways for people to Live the music. The company provides access to a full-range catalog of high quality music, lossless HiFi audio and industry-defining features on a scalable platform available in 180+ countries. \n\nFounded in 2007 in Paris, Deezer is now a global company with around 550 people based in France, Germany, UK, Brazil and the US, all brought together by their passion for music, technology and innovation. By building strategic partnerships in key markets across Europe and the Americas, Deezer keeps delivering brand value and end-user engagement across a wide variety of industries, including telecommunications, media, audio hardware and e-retail.\n \nAs an industry thought leader, Deezer was the first platform to introduce a new monetization model since the inception of music streaming, designed to better reward the artists, and the music that fans value the most.\n\nDeezer is listed on Euronext Paris (Ticker: DEEZR. ISIN: FR001400AYG6) and is also part of the Euronext Tech Leaders segment, dedicated to European high-growth tech companies, and its associated index. \n",
+    "linkedin_org_slug": "deezer"
+  },
+  {
+    "id": "1884003284",
+    "date_posted": "2025-10-09T14:39:44.945",
+    "date_created": "2025-10-09T14:41:12.872548",
+    "title": "Stage - Data Scientist (H/F)",
+    "organization": "GTT",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "address": {
+          "addressLocality": "Saint-Rémy-lès-Chevreuse",
+          "addressRegion": "Île-de-France",
+          "addressCountry": "France"
+        }
+      }
+    ],
+    "locations_alt_raw": [
+      "Saint-Rémy-lès-Chevreuse, France"
+    ],
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": [
+      "Stage"
+    ],
+    "url": "https://jobs.smartrecruiters.com/GTT/744000086889944-stage-data-scientist-h-f-",
+    "source_type": "ats",
+    "source": "smartrecruiters",
+    "source_domain": "jobs.smartrecruiters.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Saint-Rémy-lès-Chevreuse"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": [
+      "Yvelines"
+    ],
+    "locations_derived": [
+      "Saint-Rémy-lès-Chevreuse, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.7054888
+    ],
+    "lngs_derived": [
+      2.071109
+    ],
+    "remote_derived": false,
+    "domain_derived": "gtt.net",
+    "description_html": "<section class=\"job-section\" id=\"st-companyDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Description de l&apos;entreprise</h2></div><div class=\"wysiwyg\"><p>GTT est l&#x2019;expert mondial des syst&#xe8;mes de confinement cryog&#xe9;nique &#xe0; membranes d&#xe9;di&#xe9;s au transport et au stockage des gaz liqu&#xe9;fi&#xe9;s, et en particulier du GNL (gaz naturel liqu&#xe9;fi&#xe9;).</p><p>La majeure partie de son activit&#xe9; est aujourd&#x2019;hui d&#xe9;di&#xe9;e &#xe0; l&#x2019;&#xe9;quipement des m&#xe9;thaniers et des unit&#xe9;s de confinement de GNL, &#xe0; laquelle s&#x2019;ajoutent, notamment, des services, des solutions digitales et l&#x2019;hydrog&#xe8;ne vert.</p><p>Si vous souhaitez participer &#xe0; cette grande aventure et partager les valeurs de GTT telles que la s&#xe9;curit&#xe9;, l&#x2019;excellence, l&#x2019;innovation, l&#x2019;esprit d&#x2019;&#xe9;quipe et la transparence, alors n&#x2019;attendez plus et embarquez en tant que <strong>stagiaire Data Scientist&#xa0;</strong>&#xa0;!</p></div></section><section class=\"job-section\" id=\"st-jobDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Description du poste</h2></div><div class=\"wysiwyg\" itemprop=\"responsibilities\"><p>Missions :&#xa0;</p><p>Affiner la base de donn&#xe9;es des voyages bas&#xe9;es sur l&#x2019;exploitation des donn&#xe9;es de positions (AIS) en utilisant des techniques vari&#xe9;es&#xa0;: signal processing, mod&#xe8;le ML pour d&#xe9;tecter des erreurs. Exploiter ensuite cette base de donn&#xe9;es pour en tirer des informations importantes&#xa0;:</p><ul><li>statistique sur les volumes transport&#xe9;s,</li><li>statistique sur les tendances de navigation vs m&#xe9;t&#xe9;o, vs chargement (ballast/laden),</li><li>identification automatique d&#x2019;op&#xe9;rations sp&#xe9;ciales (arr&#xea;ts techniques, avaries, dry dock, attentes etc.),</li><li>construction d&#x2019;un graphe ports-voyages, &#xe9;volution temporelle et pr&#xe9;diction.</li></ul><p>Des communications r&#xe9;guli&#xe8;res et &#xe9;changes sont &#xe0; pr&#xe9;voir avec la Direction Commerciale afin de leur fournir des informations utiles pour leurs analyses.</p></div></section><section class=\"job-section\" id=\"st-qualifications\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Qualifications</h2></div><div class=\"wysiwyg\" itemprop=\"qualifications\"><p><u>Formation&#xa0;(Niveau d&#x2019;&#xe9;tudes &#x2013; Sp&#xe9;cialit&#xe9;) / Exp&#xe9;riences et&#xa0;comp&#xe9;tences souhait&#xe9;es &#xa0;:&#xa0;</u></p><p>Bac + 5 en Ing&#xe9;nierie / Informatique / Math&#xe9;matiques</p><p>Sp&#xe9;cialit&#xe9; souhait&#xe9;e : Data Science et/ou Data Analyst</p><p>Solides connaissances en data analyse&#xa0;: ma&#xee;trise des outils de dataviz, requ&#xea;tes API, SQL.</p><p>Exp&#xe9;rience en programmation Python requise.</p><p>La connaissance/attrait pour le monde maritime est un plus.</p><p>Bon esprit analytique, autonomie et capacit&#xe9; &#xe0; proposer des solutions innovantes.</p></div></section><section class=\"job-section\" id=\"st-additionalInformation\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Informations compl&#xe9;mentaires</h2></div><div class=\"wysiwyg\" itemprop=\"incentives\"><p><strong>Un cadre de vie accueillant</strong><br>\nChez GTT, nous construisons un environnement agr&#xe9;able pour vous permettre de grandir et d&#x2019;&#xe9;voluer en confiance. Dans un cadre verdoyant au c&#x153;ur de notre campus de 8 hectares, profitez d&#x2019;une ambiance de travail dynamique et accueillante et des missions &#xe0; forte valeur ajout&#xe9;e pour gagner en autonomie et s&#x2019;&#xe9;panouir au quotidien.</p><p><br>\n<strong>Les plus d&#x2019;un stage chez GTT</strong></p><ul><li>Gratification mensuelle : 1000 &#x20ac; (2&#xe8;me ann&#xe9;e de cycle ing&#xe9;nieur/BAC+4), 1500 &#x20ac; (3&#xe8;me ann&#xe9;e de cycle ing&#xe9;nieur/BAC+5)</li><li>1 jour d&apos;absence autoris&#xe9;, r&#xe9;mun&#xe9;r&#xe9; et cumulable par mois de stage (hors mai)</li><li>Acc&#xe8;s gratuit au restaurant d&#x2019;entreprise + boissons chaudes &#xe0; volont&#xe9;</li><li>Prise en charge &#xe0; 75 % du titre de transport</li></ul><p><strong>Les petits bonus qui font plaisir !</strong></p><ul><li>De nombreux &#xe9;v&#xe8;nements internes pour c&#xe9;l&#xe9;brer et partager des moments conviviaux</li><li>Des navettes gratuites GTT sont &#xe0; votre disposition depuis les gares de Saint-R&#xe9;my-l&#xe8;s-Chevreuse et Versailles Chantiers (arr&#xea;t gare des Chantiers-Cour de Buc)</li><li>Nos &#xe9;quipes ont &#xe9;galement con&#xe7;u pour vous un annuaire des logements &#xe0; proximit&#xe9;</li></ul></div></section>",
+    "ai_salary_currency": "EUR",
+    "ai_salary_value": 1500,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": "MONTH",
+    "ai_benefits": [
+      "Free Company Restaurant",
+      "Hot Beverages",
+      "Transport Subsidy",
+      "Paid Absence",
+      "Internal Events",
+      "Free Shuttles"
+    ],
+    "ai_experience_level": "0-2",
+    "ai_work_arrangement": "On-site",
+    "ai_work_arrangement_office_days": null,
+    "ai_remote_location": null,
+    "ai_remote_location_derived": null,
+    "ai_key_skills": [
+      "Data Analysis",
+      "Data Visualization",
+      "API Queries",
+      "SQL",
+      "Python",
+      "Signal Processing",
+      "Machine Learning",
+      "Analytical Thinking",
+      "Autonomy",
+      "Innovative Solutions"
+    ],
+    "ai_hiring_manager_name": null,
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "Refine the database of voyages using position data and various techniques. Extract important information such as transport volumes, navigation trends, and automatic identification of special operations.",
+    "ai_requirements_summary": "A Master's degree in Engineering, Computer Science, or Mathematics is required, with a specialization in Data Science or Data Analysis. Strong knowledge in data analysis tools, API queries, SQL, and programming in Python is essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "INTERN"
+    ],
+    "ai_job_language": "French",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 712,
+    "linkedin_org_url": "https://gtt.fr",
+    "linkedin_org_size": "501-1,000 employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Engineering Services",
+    "linkedin_org_followers": 63354,
+    "linkedin_org_headquarters": "Saint-Rémy-lès-Chevreuse, Yvelines",
+    "linkedin_org_type": "Public Company",
+    "linkedin_org_foundeddate": "",
+    "linkedin_org_specialties": [
+      "Membrane containment system",
+      "LNG Carrier",
+      "Land Storage Tank",
+      "Bunkering solutions",
+      "Small & Mid Scale",
+      "LNG as fuel",
+      "Mark III systems",
+      "Services",
+      "LPG",
+      "LNG",
+      "Smart shipping",
+      "NO96 systems",
+      "and Green hydrogen"
+    ],
+    "linkedin_org_locations": [
+      "1 route de Versailles, Saint-Rémy-lès-Chevreuse, Yvelines 78470, FR",
+      "Oakhill Road, Seaview, Isle of Wight, Isle of Wight PO34 5AP, GB",
+      "3 Riverway, Suite 1140, Houston, Texas 77056, US",
+      "BEA finance Tower, 66 HuaYuanShiQiao Road, Shanghai, Pudong 200120, CN",
+      "9 Temasek Boulevard, #18-02 Suntec City Tower 2, Singapore, Singapore 038989, SG"
+    ],
+    "linkedin_org_description": "GTT is a technological expert in containment systems with cryogenic membranes used to transport and store liquefied gases. \nFor 60 years, GTT has been designing and providing cutting-edge technologies for a better energy performance, which combine operational efficiency and safety, to equip LNG carriers, floating terminals, land storage, and multi-gas carriers. \nGTT also develops systems dedicated to the use of LNG as fuel, as well as a full range of services, including digital services in the field of Smart Shipping. \nThe Group is also active in hydrogen through its subsidiary Elogen, which designs and assembles electrolysers notably for the production of green hydrogen.\n",
+    "linkedin_org_slug": "gtt-technology-for-a-sustainable-world"
+  },
+  {
+    "id": "1883996729",
+    "date_posted": "2025-10-09T14:24:45.861",
+    "date_created": "2025-10-09T14:29:16.102897",
+    "title": "Consultant Sénior Data Engineer (H/F)",
+    "organization": "MAZARS",
+    "organization_url": null,
+    "date_validthrough": null,
+    "locations_raw": [
+      {
+        "address": {
+          "streetAddress": "Rue Kléber 45",
+          "addressLocality": "Levallois-Perret",
+          "addressRegion": "Île-de-France",
+          "postalCode": "92300",
+          "addressCountry": "France"
+        }
+      }
+    ],
+    "locations_alt_raw": [
+      "45 Rue Kléber, 92300 Levallois-Perret, France"
+    ],
+    "location_type": null,
+    "location_requirements_raw": null,
+    "salary_raw": null,
+    "employment_type": [
+      "Temps complet"
+    ],
+    "url": "https://jobs.smartrecruiters.com/MAZARS/744000086885789-consultant-senior-data-engineer-h-f-",
+    "source_type": "ats",
+    "source": "smartrecruiters",
+    "source_domain": "jobs.smartrecruiters.com",
+    "organization_logo": null,
+    "cities_derived": [
+      "Levallois-Perret"
+    ],
+    "regions_derived": [
+      "Ile-de-France"
+    ],
+    "countries_derived": [
+      "France"
+    ],
+    "counties_derived": [
+      "Hauts-de-Seine"
+    ],
+    "locations_derived": [
+      "Levallois-Perret, Ile-de-France, France"
+    ],
+    "timezones_derived": [
+      "Europe/Paris"
+    ],
+    "lats_derived": [
+      48.893974492
+    ],
+    "lngs_derived": [
+      2.284005768
+    ],
+    "remote_derived": false,
+    "domain_derived": "forvismazars.ie",
+    "description_html": "<section class=\"job-section\" id=\"st-companyDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Description de l&apos;entreprise</h2></div><div class=\"wysiwyg\"><p>Forvis Mazars est un groupe international d&apos;audit, de fiscalit&#xe9; et de conseil. Avec + de 40 000 collaborateurs pr&#xe9;sents dans une centaine de pays, nous faisons partie du Top 10 des cabinets mondiaux. Nous faisons des m&#xe9;tiers s&#xe9;rieux... sans se prendre au s&#xe9;rieux. Faire partie de nos &#xe9;quipes, c&apos;est avant tout assumer sa singularit&#xe9; et oser partager ses id&#xe9;es, dans une ambiance de travail que nous vous invitons &#xe0; d&#xe9;couvrir. Si vous souhaitez construire votre propre parcours et que vous aimez entreprendre, vous &#xea;tes au bon endroit !&#xa0;</p></div></section><section class=\"job-section\" id=\"st-jobDescription\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Description du poste</h2></div><div class=\"wysiwyg\" itemprop=\"responsibilities\"><p>Vous rejoignez une &#xe9;quipe de plus de 30 consultants sp&#xe9;cialistes de la data, r&#xe9;partis sur 2 hubs (Paris La D&#xe9;fense, New-York).<br>\nAu sein du DataLab, nos domaines d&#x2019;expertises couvrent l&#x2019;ensemble de la cha&#xee;ne de valeur de la donn&#xe9;e : Data Strategy et qualification de cas d&#x2019;usage, Gouvernance et qualit&#xe9; des donn&#xe9;es, Gestion des donn&#xe9;es de r&#xe9;f&#xe9;rence (MDM), Data transformation, Data Architecture, Data Engineering, Data Science, Data Visualisation et Analytics,<br>\nVous serez form&#xe9;(e) &#xe0; nos m&#xe9;thodologies et aurez l&#x2019;opportunit&#xe9; de travailler au sein d&#x2019;&#xe9;quipes pluridisciplinaires, y compris les &#xe9;quipes de R&amp;D qui d&#xe9;veloppent et maintiennent nos outils d&#x2019;Analytics ainsi que notre infrastructure interne (GitLab-CI, Cloud priv&#xe9; OpenNebula, CephFS, etc...).</p><p>Vous participerez notamment &#xe0; :</p><p>&#x2022; L&#x2019;am&#xe9;lioration de la performance op&#xe9;rationnelle de nos clients au travers de l&#x2019;exploitation et la valorisation de donn&#xe9;es sur des cas d&#x2019;usage m&#xe9;tier concrets (strat&#xe9;gie, marketing et vente, R&amp;D, finance, etc.).<br>\n&#x2022; L&#x2019;interaction directe avec nos clients ne nous analysons pas les probl&#xe9;matiques pour les aider &#xe0; impl&#xe9;menter des solutions technologiques sur-mesure.<br>\n&#x2022; Le d&#xe9;veloppement de bout en bout de flux de donn&#xe9;es, depuis l&#x2019;extraction et la transformation des donn&#xe9;es de nos clients, jusqu&#x2019;&#xe0; leur consommation par des syst&#xe8;mes ou applications web et tableaux de bord que nous concevons pour eux, en passant par les datalake, data-warehouse, data-marts ou API qui exposent ces donn&#xe9;es.<br>\n&#x2022; D&#xe9;ploiement de pipelines de donn&#xe9;es dans le paradigme serverless cloud (AWS Lambdas, Azure Functions, GC Functions, etc.) mais aussi utilisation de techniques DevOps et de virtualisation bare-metal avanc&#xe9;es au sein d&#x2019;une &#xe9;quipe pionni&#xe8;re du MLOps (&#xe9;quipe op&#xe9;rationnelle en CI/CD depuis 2013).</p></div></section><section class=\"job-section\" id=\"st-qualifications\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Qualifications</h2></div><div class=\"wysiwyg\" itemprop=\"qualifications\"><p>De formation Bac+5 type &#xe9;cole d&#x2019;ing&#xe9;nieur g&#xe9;n&#xe9;raliste ou sp&#xe9;cialis&#xe9;e, ou d&#x2019;un 3&#xe8;me cycle dans un domaine connexe &#xe0; la data (syst&#xe8;mes d&#x2019;informations, traitements de donn&#xe9;es, big data, statistiques, g&#xe9;nie logiciel, etc.) :<br>\nVous avez d&#xe9;j&#xe0; montr&#xe9; un int&#xe9;r&#xea;t pour le domaine du d&#xe9;veloppement applicatif int&#xe9;grant une composante Data, &#xe0; travers des stages, cours ou projets personnels impliquant le d&#xe9;veloppement back-end et/ou front-end d&#x2019;une application.<br>\n<br>\nVous avez une exp&#xe9;rience pratique et une bonne connaissance de :<br>\n&#x2022; Une ou plusieurs couches de persistance (SGBD relationnel : MySQL / MSSQL / PostgreSQL, No-SQL : MongoDB / ElasticSearch / Node4j, ou encore S3)<br>\n&#x2022; La conception et/ou l&#x2019;impl&#xe9;mentation et/ou la manipulation de datalakes, data warehouses ou data- marts<br>\n&#x2022; L&#x2019;impl&#xe9;mentation de pipelines ETL et de scripts de transformation / d&#x2019;analyse de donn&#xe9;es (Python, R,Spark)<br>\n&#x2022; Vous n&#x2019;envisagez pas de travaux s&#xe9;rieux en dehors d&#x2019;un syst&#xe8;me Linux (Ubuntu, Debian, CentOS), ou sans syst&#xe8;me de contr&#xf4;le de version (Git), et l&#x2019;utilisation d&#x2019;une cha&#xee;ne d&#x2019;int&#xe9;gration vous parait naturelle<br>\n&#x2022; Vous ma&#xee;trisez l&#x2019;anglais oral et &#xe9;crit.<br>\n<br>\nUne premi&#xe8;re exp&#xe9;rience des technologies suivantes est un plus :<br>\n&#x2022; Sensibilisation &#xe0; la qualit&#xe9; logicielle et aux cha&#xee;nes d&#x2019;int&#xe9;gration continue (DevOps : Ansible, Terraform, CI/CD)<br>\n&#x2022; Sensibilisation &#xe0; l&#x2019;interaction avec des &#xe9;quipes fullstack pluridisciplinaires (RestAPI, VueJS)<br>\n&#x2022; Exp&#xe9;rience sur l&#x2019;un des cloud providers (Azure, AWS, GCP), avec des outils modernes de Data Engineering :<br>\n&#x2022; Redshift, Azure Synapse, Databricks, ...<br>\n&#x2022; Cha&#xee;ne d&#x2019;analyse pr&#xe9;dictive (scikit-learn, TensorFlow, etc.)</p><p><br>\n<strong>Informations compl&#xe9;mentaires :</strong></p><p>Nous proposons &#xe0; chacun de nos collaborateurs :</p><p>&#x2022; Plan Epargne Entreprise avec Prime d&#x2019;Int&#xe9;ressement et Participation annuelles importantes,<br>\n&#x2022; 8 semaines de cong&#xe9;s / an<br>\n&#x2022; Charte de t&#xe9;l&#xe9;travail flexible (possibilit&#xe9; de t&#xe9;l&#xe9;travailler 1 &#xe0; 2 jours par semaine, les d&#xe9;placements en client&#xe8;le restant une priorit&#xe9;)<br>\n&#x2022; Nombreuses actions en faveur de l&#x2019;&#xe9;quilibre pro/perso (parentalit&#xe9;, Mazars Break, Cong&#xe9; solidaire, etc.),<br>\n&#x2022; Forfait mobilit&#xe9; durable pour accompagner vos d&#xe9;placements domicile-travail selon vos besoins,<br>\n&#x2022; Environnement de travail attractif et tout confort. D&#xe8;s 2025, un nouveau Campus &#xe0; Levallois (5 min &#xe0; pied du m&#xe9;tro) : salle de sport, espaces verts, roof top, terrasses, restauration, conciergerie...<br>\n&#x2022; CSE (offre sportive, cin&#xe9;ma, art et culture, cadeaux de fin d&#x2019;ann&#xe9;e, soir&#xe9;e annuelle, etc...),<br>\n&#x2022; Mutuelle modulable selon vos besoins<br>\n&#x2022; Association sportive (groupes de running, foot, basket, golf, tennis, ou encore yoga, etc.)<br>\n&#x2022; PC portable, double &#xe9;cran et Iphone<br>\n&#x2022; Carte American Express pour vos frais professionnels</p><p><br>\n<strong>D&#xe9;roul&#xe9; du process : &#xa0;</strong><br>\nLaury-Anne POUNOUSSAMY est en charge de ce recrutement, elle sera votre point de contact tout au long de votre process. &#xa0;</p><p>Vous serez contact&#xe9;(e) pour passer 3 entretiens d&apos;1h r&#xe9;partis sur 3 semaines environ :<br>\n<br>\n- 1 entretien technique avec un Manager / R&#xe9;f&#xe9;rent<br>\n- 1 entretien avec l&#x2019;associ&#xe9; Data<br>\n- 1 entretien RH et motivations avec un charg&#xe9; de recrutement</p><p>#LI-LP1</p></div></section><section class=\"job-section\" id=\"st-additionalInformation\"><div><p class=\"googlejobs-paragraph--empty\"></p><h2 class=\"title\">Informations compl&#xe9;mentaires</h2></div><div class=\"wysiwyg\" itemprop=\"incentives\"><p>&#xa0;</p><ul></ul></div></section>",
+    "ai_salary_currency": null,
+    "ai_salary_value": null,
+    "ai_salary_minvalue": null,
+    "ai_salary_maxvalue": null,
+    "ai_salary_unittext": null,
+    "ai_benefits": [
+      "Employee Savings Plan with Significant Profit Sharing and Participation",
+      "8 Weeks of Vacation per Year",
+      "Flexible Telecommuting Policy",
+      "Work-Life Balance Initiatives",
+      "Sustainable Mobility Package",
+      "Attractive Work Environment",
+      "CSE Benefits",
+      "Customizable Health Insurance",
+      "Sports Association"
+    ],
+    "ai_experience_level": "2-5",
+    "ai_work_arrangement": "Hybrid",
+    "ai_work_arrangement_office_days": 2,
+    "ai_remote_location": [
+      "Paris La Défense, France",
+      "New York, New York, United States"
+    ],
+    "ai_remote_location_derived": [
+      "New York, United States"
+    ],
+    "ai_key_skills": [
+      "Data Engineering",
+      "Data Strategy",
+      "Data Governance",
+      "Data Quality",
+      "Data Transformation",
+      "Data Architecture",
+      "ETL Pipelines",
+      "Python",
+      "R",
+      "Spark",
+      "Linux",
+      "Git",
+      "Cloud Computing",
+      "DevOps",
+      "Data Warehousing",
+      "Data Visualization",
+      "Analytics"
+    ],
+    "ai_hiring_manager_name": "Laury-Anne POUNOUSSAMY",
+    "ai_hiring_manager_email_address": null,
+    "ai_core_responsibilities": "You will improve the operational performance of clients by leveraging data for concrete business use cases. You will interact directly with clients to help them implement tailored technological solutions.",
+    "ai_requirements_summary": "A Master's degree in a relevant field is required, along with practical experience in data-related application development. Familiarity with data persistence layers and cloud technologies is essential.",
+    "ai_working_hours": 40,
+    "ai_employment_type": [
+      "FULL_TIME"
+    ],
+    "ai_job_language": "French",
+    "ai_visa_sponsorship": false,
+    "linkedin_org_employees": 2391,
+    "linkedin_org_url": "https://www.forvismazars.com/group/en",
+    "linkedin_org_size": "10,001+ employees",
+    "linkedin_org_slogan": null,
+    "linkedin_org_industry": "Accounting",
+    "linkedin_org_followers": null,
+    "linkedin_org_headquarters": "",
+    "linkedin_org_type": "Partnership",
+    "linkedin_org_foundeddate": "",
+    "linkedin_org_specialties": [
+      ""
+    ],
+    "linkedin_org_locations": [],
+    "linkedin_org_description": "Forvis Mazars is a leading global professional services network operating under a single brand with just two members: Forvis Mazars, LLP in the United States and Forvis Mazars Group SC, an internationally integrated partnership operating in over 100 countries and territories.",
+    "linkedin_org_slug": "forvis-mazars"
+  }
+]

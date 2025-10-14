@@ -3,42 +3,36 @@ import { JobListingTable } from "@/drizzle/schema"
 import { cn } from "@/lib/utils"
 import { ComponentProps } from "react"
 import {
-  formatExperienceLevel,
-  formatJobListingLocation,
   formatJobType,
   formatLocationRequirement,
-  formatWage,
 } from "../lib/formatters"
 import {
   BanknoteIcon,
   BuildingIcon,
   GraduationCapIcon,
   HourglassIcon,
-  MapPinIcon,
 } from "lucide-react"
 
 export function JobListingBadges({
   jobListing: {
-    wage,
-    wageInterval,
-    stateAbbreviation,
-    city,
-    type,
-    experienceLevel,
-    locationRequirement,
+    aiSalaryMinValue,
+    aiSalaryMaxValue,
+    aiSalaryCurrency,
+    aiEmploymentType,
+    aiExperienceLevel,
+    aiWorkArrangement,
     isFeatured,
   },
   className,
 }: {
   jobListing: Pick<
     typeof JobListingTable.$inferSelect,
-    | "wage"
-    | "wageInterval"
-    | "stateAbbreviation"
-    | "city"
-    | "type"
-    | "experienceLevel"
-    | "locationRequirement"
+    | "aiSalaryMinValue"
+    | "aiSalaryMaxValue"
+    | "aiSalaryCurrency"
+    | "aiEmploymentType"
+    | "aiExperienceLevel"
+    | "aiWorkArrangement"
     | "isFeatured"
   >
   className?: string
@@ -61,30 +55,32 @@ export function JobListingBadges({
           Featured
         </Badge>
       )}
-      {wage != null && wageInterval != null && (
+      {aiSalaryMinValue != null && aiSalaryMaxValue != null && (
         <Badge {...badgeProps}>
           <BanknoteIcon />
-          {formatWage(wage, wageInterval)}
+          {aiSalaryCurrency && `${aiSalaryCurrency} `}
+          {aiSalaryMinValue.toLocaleString()} - {aiSalaryMaxValue.toLocaleString()}
         </Badge>
       )}
-      {(stateAbbreviation != null || city != null) && (
+
+      {aiWorkArrangement && (
         <Badge {...badgeProps}>
-          <MapPinIcon className="size-10" />
-          {formatJobListingLocation({ stateAbbreviation, city })}
+          <BuildingIcon />
+          {formatLocationRequirement(aiWorkArrangement)}
         </Badge>
       )}
-      <Badge {...badgeProps}>
-        <BuildingIcon />
-        {formatLocationRequirement(locationRequirement)}
-      </Badge>
-      <Badge {...badgeProps}>
-        <HourglassIcon />
-        {formatJobType(type)}
-      </Badge>
-      <Badge {...badgeProps}>
-        <GraduationCapIcon />
-        {formatExperienceLevel(experienceLevel)}
-      </Badge>
+      {aiEmploymentType && Array.isArray(aiEmploymentType) && aiEmploymentType.length > 0 && (
+        <Badge {...badgeProps}>
+          <HourglassIcon />
+          {formatJobType(aiEmploymentType[0])}
+        </Badge>
+      )}
+      {aiExperienceLevel && (
+        <Badge {...badgeProps}>
+          <GraduationCapIcon />
+          {aiExperienceLevel}
+        </Badge>
+      )}
     </>
   )
 }

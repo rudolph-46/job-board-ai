@@ -21,19 +21,26 @@ import { MarkdownRenderer } from "@/components/markdown/MarkdownRenderer"
 
 export default function UserResumePage() {
   return (
-    <div className="max-w-3xl mx-auto py-8 space-y-6 px-4">
-      <h1 className="text-2xl font-bold">Upload Your Resume</h1>
-      <Card>
-        <CardContent>
-          <DropzoneClient />
-        </CardContent>
+    <div className="max-w-6xl mx-auto px-4 py-6">
+      <div className="max-w-3xl mx-auto space-y-6">
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold tracking-tight mb-2">Upload Your Resume</h1>
+          <p className="text-muted-foreground">
+            Upload your resume to get AI-powered job recommendations
+          </p>
+        </div>
+        <Card>
+          <CardContent>
+            <DropzoneClient />
+          </CardContent>
+          <Suspense>
+            <ResumeDetails />
+          </Suspense>
+        </Card>
         <Suspense>
-          <ResumeDetails />
+          <AISummaryCard />
         </Suspense>
-      </Card>
-      <Suspense>
-        <AISummaryCard />
-      </Suspense>
+      </div>
     </div>
   )
 }
