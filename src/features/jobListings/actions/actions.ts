@@ -197,6 +197,14 @@ export async function getAiJobListingSearchResults(
   }
 
   const allListings = await getPublicJobListings()
+  
+  if (!allListings || allListings.length === 0) {
+    return {
+      error: true,
+      message: "No jobs available for AI search",
+    }
+  }
+
   const matchedListings = await getMatchingJobListings(
     data.query,
     allListings,

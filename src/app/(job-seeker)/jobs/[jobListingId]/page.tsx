@@ -150,7 +150,7 @@ export default async function JobDetailPage({ params }: Props) {
         {jobListing.aiKeySkills && Array.isArray(jobListing.aiKeySkills) && jobListing.aiKeySkills.length > 0 && (
           <Card>
             <CardHeader>
-              <CardTitle>Required Skills</CardTitle>
+              <CardTitle>✨ Required Skills</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
@@ -168,7 +168,7 @@ export default async function JobDetailPage({ params }: Props) {
         {jobListing.aiCoreResponsibilities && (
           <Card>
             <CardHeader>
-              <CardTitle>Core Responsibilities</CardTitle>
+              <CardTitle>✨ Core Responsibilities</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="prose prose-sm max-w-none">
@@ -182,7 +182,7 @@ export default async function JobDetailPage({ params }: Props) {
         {jobListing.aiRequirementsSummary && (
           <Card>
             <CardHeader>
-              <CardTitle>Requirements Summary</CardTitle>
+              <CardTitle>✨ Requirements Summary</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="prose prose-sm max-w-none">
@@ -200,19 +200,7 @@ export default async function JobDetailPage({ params }: Props) {
         </div>
       )}
 
-      {/* Benefits si disponible */}
-      {jobListing.aiBenefits && (
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle>Benefits</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="prose max-w-none">
-              <MarkdownRenderer source={jobListing.aiBenefits} />
-            </div>
-          </CardContent>
-        </Card>
-      )}
+
 
 
     </div>

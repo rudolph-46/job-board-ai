@@ -1,33 +1,37 @@
 import { env } from "@/data/env/server"
-import {
-  experienceLevels,
-  jobListingTypes,
-  locationRequirements,
-  wageIntervals,
-} from "@/drizzle/schema"
 import { createAgent, openai } from "@inngest/agent-kit"
 import { z } from "zod"
 import { getLastOutputMessage } from "./getLastOutputMessage"
 
-const listingSchema = z.object({
+// Schéma simplifié pour éviter de dépasser la limite de tokens
+const simplifiedListingSchema = z.object({
   id: z.string(),
   title: z.string(),
-  description: z.string(),
-  wage: z.number().nullable(),
-  wageInterval: z.enum(wageIntervals).nullable(),
-  stateAbbreviation: z.string().nullable(),
+  organizationName: z.string(),
   city: z.string().nullable(),
-  experienceLevel: z.enum(experienceLevels),
-  type: z.enum(jobListingTypes),
-  locationRequirement: z.enum(locationRequirements),
+  country: z.string().nullable(),
+  aiSalaryMinValue: z.number().nullable(),
+  aiSalaryMaxValue: z.number().nullable(),
+  aiExperienceLevel: z.string().nullable(),
+  aiWorkArrangement: z.string().nullable(),
+  aiKeySkills: z.array(z.string()).nullable(),
+  aiEmploymentType: z.array(z.string()).nullable(),
 })
 
 export async function getMatchingJobListings(
   prompt: string,
-  jobListings: z.infer<typeof listingSchema>[],
+  jobListings: any[], // Type flexible pour accepter les données complètes de la DB
   { maxNumberOfJobs }: { maxNumberOfJobs?: number } = {}
 ) {
   const NO_JOBS = "NO_JOBS"
+
+  // Vérifier que jobListings n'est pas undefined ou vide
+  if (!jobListings || !Array.isArray(jobListings) || jobListings.length === 0) {
+    return []
+  }
+
+  // Limiter à 100 jobs maximum pour éviter de dépasser la limite de tokens
+  const limitedJobListings = jobListings.slice(0, 100)
 
   const agent = createAgent({
     name: "Job Matching Agent",
@@ -37,21 +41,22 @@ export async function getMatchingJobListings(
         ? `You are to return up to ${maxNumberOfJobs} jobs.`
         : `Return all jobs that match their requirements.`
     } Return the jobs as a comma separated list of jobIds. If you cannot find any jobs that match the user prompt, return the text "${NO_JOBS}". Here is the JSON array of available job listings: ${JSON.stringify(
-      jobListings.map(listing =>
-        listingSchema
-          .transform(listing => ({
-            ...listing,
-            wage: listing.wage ?? undefined,
-            wageInterval: listing.wageInterval ?? undefined,
-            city: listing.city ?? undefined,
-            stateAbbreviation: listing.stateAbbreviation ?? undefined,
-            locationRequirement: listing.locationRequirement ?? undefined,
-          }))
-          .parse(listing)
-      )
+      limitedJobListings.map(listing => ({
+        id: listing.id,
+        title: listing.title,
+        organizationName: listing.organizationName,
+        city: listing.city,
+        country: listing.country,
+        aiSalaryMinValue: listing.aiSalaryMinValue,
+        aiSalaryMaxValue: listing.aiSalaryMaxValue,
+        aiExperienceLevel: listing.aiExperienceLevel,
+        aiWorkArrangement: listing.aiWorkArrangement,
+        aiKeySkills: listing.aiKeySkills || [],
+        aiEmploymentType: listing.aiEmploymentType || [],
+      }))
     )}`,
     model: openai({
-      model: "gpt-4",
+      model: "gpt-4o-mini", // Plus de contexte et moins cher
       apiKey: env.OPENAI_API_KEY,
     }),
   })
