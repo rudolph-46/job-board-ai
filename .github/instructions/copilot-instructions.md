@@ -2,7 +2,7 @@
 
 ## Architecture Overview
 
-This is a **dual-role job board platform** built with Next.js 15 (Turbopack), featuring:
+This is a **dual-role job board platform** built with Next.js 15, featuring:
 - **Job seekers**: Browse listings, AI-powered search, apply with resumes
 - **Employers**: Post jobs, manage applications, AI applicant ranking
 
@@ -14,6 +14,7 @@ This is a **dual-role job board platform** built with Next.js 15 (Turbopack), fe
 - **Background Jobs**: Inngest for async processing
 - **File Upload**: UploadThing for resume management
 - **Email**: Resend with React Email templates
+- **Production**: PM2 with ecosystem.config.json
 
 ## Feature-Based Architecture
 
@@ -32,9 +33,11 @@ Each feature follows the pattern: `actions/` (server actions) → `db/` (databas
 
 ### 1. Database & Caching
 - **Schema location**: `src/drizzle/schema/` (one file per entity)
+- **Job schema**: Uses `varchar` IDs (not UUID) for external job data compatibility
+- **HTML descriptions**: `descriptionHtml` field with safe rendering via `HtmlRenderer` component
 - **Cache invalidation**: Each feature has `db/cache/` with revalidation helpers
 - **Query caching**: Use `"use cache"` + `cacheTag()` for server-side caching
-- **Environment**: Database URL constructed from individual env vars in `src/data/env/server.ts`
+- **Environment**: `DATABASE_URL` directly in env vars (simplified from component-based construction)
 
 ### 2. Authentication & Authorization
 - **Current user**: `getCurrentUser()` and `getCurrentOrganization()` from clerk services
@@ -44,6 +47,8 @@ Each feature follows the pattern: `actions/` (server actions) → `db/` (databas
 
 ### 3. AI Integration
 - **Job search**: `getMatchingJobListings` agent in `services/inngest/ai/`
+- **Token optimization**: Limited to 100 jobs max, simplified schema to prevent OpenAI token limits
+- **Model**: Uses `gpt-4o-mini` for cost efficiency and better context handling
 - **Application ranking**: Uses OpenAI to score applicants based on job requirements
 - **Important**: AI responses need URL encoding cleanup (remove quotes, handle arrays)
 
@@ -83,21 +88,34 @@ npm run email         # Email preview server
 3. Saves file metadata to `user_resumes` table
 4. Triggers Inngest job for AI resume summary
 
-### AI Search Flow  
-1. User query → `getAiJobListingSearchResults` action
-2. OpenAI agent processes with job schema context
-3. Returns job IDs → URL with `jobIds` param
-4. **Critical**: Clean URL params (remove quotes, handle comma-separated IDs)
-
 ### Application Management
 1. Applications stored with ratings (1-5 stars)
 2. `ApplicationTable` component with sortable columns
 3. Employer can view resumes + cover letters in modals
 4. AI ranking considers job requirements + applicant profile
 
+## Key Integration Points
+
+### File Upload Flow
+1. `UploadDropzone` → UploadThing API → `customFileRouter`
+2. Router creates user if missing via Clerk API
+3. Saves file metadata to `user_resumes` table
+4. Triggers Inngest job for AI resume summary
+
+### AI Search Flow  
+1. User query → `getAiJobListingSearchResults` action
+2. OpenAI agent processes with job schema context
+3. Returns job IDs → URL with `jobIds` param
+4. **Critical**: Clean URL params (remove quotes, handle comma-separated IDs)
+
+### Webhook System
+- **Comprehensive webhooks**: `src/app/api/webhook/` for external integrations
+- **Apify integration**: Job data ingestion via webhook
+- **User/Job webhooks**: Separate endpoints for different data types
+
 ## Common Gotchas
 
-- **Environment**: Use `env` from `@/data/env/server` - constructs DATABASE_URL automatically
+- **Environment**: Use `env` from `@/data/env/server` - `DATABASE_URL` must be set directly
 - **Cache tags**: Always revalidate related caches in DB operations
 - **Clerk users**: Must sync to local DB for foreign key relationships  
 - **AI responses**: Strip quotes and validate array parsing for job IDs
