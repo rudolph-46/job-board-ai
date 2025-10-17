@@ -1,36 +1,28 @@
 import { JobListingItems } from "./_shared/JobListingItems"
-import { JobListingFilterForm } from "@/features/jobListings/components/JobListingFilterForm"
+import { JobStatsHeader } from "@/components/JobStatsHeader"
+import { MobileFiltersWrapper } from "@/components/MobileFiltersWrapper"
+import { getJobListingStats } from "@/features/jobListings/services/jobStatsService"
 
-export default function HomePage({
+export default async function HomePage({
   searchParams,
 }: {
   searchParams: Promise<Record<string, string | string[]>>
 }) {
+  // Récupérer les statistiques des jobs
+  const { totalJobs, lastUpdated } = await getJobListingStats()
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-6">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight mb-2">Find Your Dream Job</h1>
-        <p className="text-muted-foreground">
-          Discover thousands of job opportunities with AI-powered search
-        </p>
-      </div>
+      {/* En-tête avec salutation et statistiques */}
+      <JobStatsHeader 
+        totalJobs={totalJobs} 
+        lastUpdated={lastUpdated || undefined} 
+      />
       
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        {/* Sidebar des filtres */}
-        <div className="lg:col-span-1">
-          <div className="sticky top-20">
-            <div className="bg-card rounded-lg border p-6">
-              <h2 className="font-semibold mb-4">Filter Jobs</h2>
-              <JobListingFilterForm />
-            </div>
-          </div>
-        </div>
-        
-        {/* Contenu principal */}
-        <div className="lg:col-span-3">
-          <JobListingItems searchParams={searchParams} />
-        </div>
-      </div>
+      {/* Wrapper qui gère les filtres desktop/mobile */}
+      <MobileFiltersWrapper totalJobs={totalJobs}>
+        <JobListingItems searchParams={searchParams} />
+      </MobileFiltersWrapper>
     </div>
   )
 }

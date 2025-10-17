@@ -13,6 +13,7 @@ import { createdAt, id, updatedAt } from "../schemaHelpers"
 import { OrganizationTable } from "./organization"
 import { relations } from "drizzle-orm"
 import { JobListingApplicationTable } from "./jobListingApplication"
+import { LocationTable } from "./location"
 
 // Enums simplifiés basés sur les données AI
 export const aiWorkArrangements = ["On-site", "Remote", "Hybrid"] as const
@@ -68,6 +69,7 @@ export const JobListingTable = pgTable(
     region: varchar(),
     country: varchar(),
     location: varchar(), // Location complète dérivée
+    locationId: varchar().references(() => LocationTable.id), // Nouvelle relation vers locations
     
     // Informations IA (toutes les données AI importantes)
     aiSalaryMinValue: integer(),
@@ -106,6 +108,7 @@ export const JobListingTable = pgTable(
   table => [
     index().on(table.city),
     index().on(table.country),
+    index().on(table.locationId),
     index().on(table.aiWorkArrangement),
     index().on(table.organizationName),
   ]
@@ -117,6 +120,10 @@ export const jobListingReferences = relations(
     organization: one(OrganizationTable, {
       fields: [JobListingTable.organizationId],
       references: [OrganizationTable.id],
+    }),
+    location: one(LocationTable, {
+      fields: [JobListingTable.locationId],
+      references: [LocationTable.id],
     }),
     applications: many(JobListingApplicationTable),
   })

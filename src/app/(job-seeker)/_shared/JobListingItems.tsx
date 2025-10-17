@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { db } from "@/drizzle/db"
 import {
   experienceLevels,
   JobListingTable,
@@ -17,17 +16,14 @@ import {
 import { convertSearchParamsToString } from "@/lib/convertSearchParamsToString"
 import { cn } from "@/lib/utils"
 import { AvatarFallback } from "@radix-ui/react-avatar"
-import { and, desc, eq, ilike, or, SQL, sql } from "drizzle-orm"
+import { getJobListings, SearchParamsType } from "@/features/jobListings/services/jobListingService"
 import Link from "next/link"
 import { Suspense } from "react"
 import { differenceInDays } from "date-fns"
 import { connection } from "next/server"
 import { Badge } from "@/components/ui/badge"
 import { JobListingBadges } from "@/features/jobListings/components/JobListingBadges"
-import { optional, z } from "zod"
-import { cacheTag } from "next/dist/server/use-cache/cache-tag"
-import { getJobListingGlobalTag } from "@/features/jobListings/db/cache/jobListings"
-import { getOrganizationIdTag } from "@/features/organizations/db/cache/organizations"
+import { z } from "zod"
 import { Pagination } from "@/components/Pagination"
 
 type Props = {
@@ -38,6 +34,7 @@ type Props = {
 const searchParamsSchema = z.object({
   title: z.string().optional().catch(undefined),
   city: z.string().optional().catch(undefined),
+  locationId: z.string().optional().catch(undefined), // Nouveau: filtre par locationId
   state: z.string().optional().catch(undefined),
   experience: z.enum(experienceLevels).optional().catch(undefined),
   locationRequirement: z.enum(locationRequirements).optional().catch(undefined),
@@ -62,6 +59,9 @@ const searchParamsSchema = z.object({
     .catch([]),
 })
 
+// Utiliser le type du service au lieu de redéfinir
+type SearchParams = SearchParamsType
+
 export function JobListingItems(props: Props) {
   return (
     <Suspense>
@@ -72,13 +72,18 @@ export function JobListingItems(props: Props) {
 
 async function SuspendedComponent({ searchParams, params }: Props) {
   const jobListingId = params ? (await params).jobListingId : undefined
-  const { success, data } = searchParamsSchema.safeParse(await searchParams)
+  const rawSearchParams = await searchParams
+  console.log('📋 Raw searchParams received:', rawSearchParams)
+  
+  const { success, data } = searchParamsSchema.safeParse(rawSearchParams)
+  console.log('📋 Schema parse result:', { success, data })
   const search = success ? data : {}
 
   // Configuration de la pagination
   const itemsPerPage = 10
   const currentPage = search.page || 1
   
+  console.log('📋 Final search object passed to getJobListings:', search)
   const result = await getJobListings(search, jobListingId, currentPage, itemsPerPage)
   const { jobListings = [], totalCount = 0 } = result || {}
   
@@ -100,7 +105,7 @@ async function SuspendedComponent({ searchParams, params }: Props) {
   return (
     <div className="space-y-6">
       <div className="space-y-4">
-        {jobListings.map(jobListing => (
+        {jobListings.map((jobListing: any) => (
           <Link
             className="block"
             key={jobListing.id}
@@ -238,119 +243,4 @@ async function DaysSincePosting({ postedAt }: { postedAt: Date }) {
   }).format(daysSincePosted, "days")
 }
 
-async function getJobListings(
-  searchParams: z.infer<typeof searchParamsSchema>,
-  jobListingId: string | undefined,
-  page = 1,
-  itemsPerPage = 10
-) {
-  "use cache"
-  cacheTag(getJobListingGlobalTag())
-
-  const whereConditions: (SQL | undefined)[] = []
-  if (searchParams.title) {
-    whereConditions.push(
-      or(
-        ilike(JobListingTable.title, `%${searchParams.title}%`),
-        ilike(JobListingTable.organizationName, `%${searchParams.title}%`)
-      )
-    )
-  }
-
-  if (searchParams.locationRequirement) {
-    whereConditions.push(
-      eq(JobListingTable.aiWorkArrangement, searchParams.locationRequirement)
-    )
-  }
-
-  if (searchParams.city) {
-    whereConditions.push(ilike(JobListingTable.city, `%${searchParams.city}%`))
-  }
-
-  if (searchParams.state) {
-    whereConditions.push(
-      eq(JobListingTable.region, searchParams.state)
-    )
-  }
-
-  if (searchParams.experience) {
-    whereConditions.push(
-      eq(JobListingTable.aiExperienceLevel, searchParams.experience)
-    )
-  }
-
-  if (searchParams.type) {
-    // Note: aiEmploymentType is jsonb array, so we need to use jsonb contains
-    whereConditions.push(
-      sql`${JobListingTable.aiEmploymentType} ? ${searchParams.type}`
-    )
-  }
-
-  if (searchParams.jobIds) {
-    whereConditions.push(
-      or(...searchParams.jobIds.map(jobId => eq(JobListingTable.id, jobId)))
-    )
-  }
-
-  const whereClause = or(
-    jobListingId
-      ? and(
-          eq(JobListingTable.status, "published"),
-          eq(JobListingTable.id, jobListingId)
-        )
-      : undefined,
-    and(eq(JobListingTable.status, "published"), ...whereConditions)
-  )
-
-  // Si on cherche un job spécifique, pas de pagination
-  if (jobListingId) {
-    const data = await db.query.JobListingTable.findMany({
-      where: whereClause,
-      with: {
-        organization: {
-          columns: {
-            id: true,
-            name: true,
-            imageUrl: true,
-          },
-        },
-      },
-      orderBy: [desc(JobListingTable.isFeatured), desc(JobListingTable.datePosted)],
-    })
-
-    data.forEach(listing => {
-      cacheTag(getOrganizationIdTag(listing.organization.id))
-    })
-
-    return { jobListings: data, totalCount: data.length }
-  }
-
-  // Pour la pagination, récupérer le count total et les données paginées
-  const [jobListings, [{ count }]] = await Promise.all([
-    db.query.JobListingTable.findMany({
-      where: whereClause,
-      with: {
-        organization: {
-          columns: {
-            id: true,
-            name: true,
-            imageUrl: true,
-          },
-        },
-      },
-      orderBy: [desc(JobListingTable.isFeatured), desc(JobListingTable.datePosted)],
-      limit: itemsPerPage,
-      offset: (page - 1) * itemsPerPage,
-    }),
-    db
-      .select({ count: sql<number>`count(*)` })
-      .from(JobListingTable)
-      .where(whereClause)
-  ])
-
-  jobListings.forEach(listing => {
-    cacheTag(getOrganizationIdTag(listing.organization.id))
-  })
-
-  return { jobListings, totalCount: count }
-}
+// Fonction getJobListings déplacée vers le service jobListingService.ts

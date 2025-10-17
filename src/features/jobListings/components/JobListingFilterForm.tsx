@@ -23,6 +23,7 @@ import {
   jobListingTypes,
   LocationRequirement,
   locationRequirements,
+  LocationSelect,
 } from "@/drizzle/schema"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
@@ -33,16 +34,17 @@ import {
   formatJobType,
   formatLocationRequirement,
 } from "../lib/formatters"
-import { StateSelectItems } from "./StateSelectItems"
+
 import { Button } from "@/components/ui/button"
 import { LoadingSwap } from "@/components/LoadingSwap"
+import { LocationSelectComponent } from "./LocationSelect"
+import { useEffect, useState } from "react"
 
 const ANY_VALUE = "any"
 
 const jobListingFilterSchema = z.object({
   title: z.string().optional(),
-  city: z.string().optional(),
-  stateAbbreviation: z.string().or(z.literal(ANY_VALUE)).optional(),
+  locationId: z.string().or(z.literal(ANY_VALUE)).optional(), // Nouveau champ
   experienceLevel: z.enum(experienceLevels).or(z.literal(ANY_VALUE)).optional(),
   type: z.enum(jobListingTypes).or(z.literal(ANY_VALUE)).optional(),
   locationRequirement: z
@@ -55,46 +57,107 @@ export function JobListingFilterForm() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const pathname = usePathname()
+  const [locations, setLocations] = useState<LocationSelect[]>([])
+
+  // Charger les locations populaires
+  useEffect(() => {
+    async function loadLocations() {
+      try {
+        const response = await fetch('/api/locations/popular')
+        if (response.ok) {
+          const data = await response.json()
+          setLocations(data)
+        }
+      } catch (error) {
+        console.error('Erreur lors du chargement des locations:', error)
+      }
+    }
+    
+    loadLocations()
+  }, [])
+
+  // Écouter l'événement de soumission externe
+  useEffect(() => {
+    const handleExternalSubmit = () => {
+      console.log('🎯 External submit event received, triggering form submission...')
+      form.handleSubmit(onSubmit)()
+    }
+
+    window.addEventListener('triggerFormSubmit', handleExternalSubmit)
+    return () => {
+      window.removeEventListener('triggerFormSubmit', handleExternalSubmit)
+    }
+  }, [])
 
   const form = useForm({
     resolver: zodResolver(jobListingFilterSchema),
     defaultValues: {
       title: searchParams.get("title") ?? "",
-      city: searchParams.get("city") ?? "",
+      locationId: searchParams.get("locationId") ?? ANY_VALUE,
       locationRequirement:
         (searchParams.get("locationRequirement") as LocationRequirement) ??
         ANY_VALUE,
-      stateAbbreviation: searchParams.get("state") ?? ANY_VALUE,
       experienceLevel:
         (searchParams.get("experience") as ExperienceLevel) ?? ANY_VALUE,
       type: (searchParams.get("type") as JobListingType) ?? ANY_VALUE,
     },
   })
 
+  // Écouter l'événement de soumission externe
+  useEffect(() => {
+    const handleExternalSubmit = () => {
+      console.log('🎯 External submit event received, triggering form submission...')
+      form.handleSubmit(onSubmit)()
+    }
+
+    window.addEventListener('triggerFormSubmit', handleExternalSubmit)
+    return () => {
+      window.removeEventListener('triggerFormSubmit', handleExternalSubmit)
+    }
+  }, [form])
+
   function onSubmit(data: z.infer<typeof jobListingFilterSchema>) {
+    console.log('🔍 Form onSubmit called with data:', data)
+    
     const newParams = new URLSearchParams()
 
-    if (data.city) newParams.set("city", data.city)
-    if (data.stateAbbreviation && data.stateAbbreviation !== ANY_VALUE) {
-      newParams.set("state", data.stateAbbreviation)
+    if (data.locationId && data.locationId !== ANY_VALUE) {
+      newParams.set("locationId", data.locationId)
+      console.log('✅ Added locationId:', data.locationId)
     }
-    if (data.title) newParams.set("title", data.title)
+    if (data.title) {
+      newParams.set("title", data.title)
+      console.log('✅ Added title:', data.title)
+    }
     if (data.experienceLevel && data.experienceLevel !== ANY_VALUE) {
       newParams.set("experience", data.experienceLevel)
+      console.log('✅ Added experience:', data.experienceLevel)
     }
     if (data.type && data.type !== ANY_VALUE) {
       newParams.set("type", data.type)
+      console.log('✅ Added type:', data.type)
     }
     if (data.locationRequirement && data.locationRequirement !== ANY_VALUE) {
       newParams.set("locationRequirement", data.locationRequirement)
+      console.log('✅ Added locationRequirement:', data.locationRequirement)
     }
 
-    router.push(`${pathname}?${newParams.toString()}`)
+    const newUrl = `${pathname}?${newParams.toString()}`
+    console.log('🚀 Navigating to:', newUrl)
+    
+    router.push(newUrl)
+    
+    // Émettre un événement pour fermer le panneau mobile avec un délai
+    console.log('📢 Dispatching filtersApplied event...')
+    setTimeout(() => {
+      window.dispatchEvent(new CustomEvent('filtersApplied'))
+      console.log('✅ filtersApplied event dispatched')
+    }, 100)
   }
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form id="job-filter-form" onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           name="title"
           control={form.control}
@@ -134,35 +197,19 @@ export function JobListingFilterForm() {
           )}
         />
         <FormField
-          name="city"
+          name="locationId"
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>City</FormLabel>
+              <FormLabel>Ville</FormLabel>
               <FormControl>
-                <Input {...field} />
+                <LocationSelectComponent
+                  value={field.value}
+                  onValueChange={field.onChange}
+                  locations={locations}
+                  placeholder="Sélectionner une ville..."
+                />
               </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          name="stateAbbreviation"
-          control={form.control}
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>State</FormLabel>
-              <Select value={field.value} onValueChange={field.onChange}>
-                <FormControl>
-                  <SelectTrigger className="w-full">
-                    <SelectValue />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value={ANY_VALUE}>Any</SelectItem>
-                  <StateSelectItems />
-                </SelectContent>
-              </Select>
               <FormMessage />
             </FormItem>
           )}
@@ -217,15 +264,6 @@ export function JobListingFilterForm() {
             </FormItem>
           )}
         />
-        <Button
-          disabled={form.formState.isSubmitting}
-          type="submit"
-          className="w-full"
-        >
-          <LoadingSwap isLoading={form.formState.isSubmitting}>
-            Filter
-          </LoadingSwap>
-        </Button>
       </form>
     </Form>
   )
