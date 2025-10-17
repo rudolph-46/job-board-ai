@@ -65,7 +65,7 @@ export default async function DiagnosticPage() {
       <div className="mt-6 p-4 border rounded-lg">
         <h2 className="text-lg font-semibold mb-2">Instructions de test</h2>
         <ol className="list-decimal list-inside space-y-1 text-sm">
-          <li>Vérifiez que vous êtes connecté (si "Authentifié" = Non, allez sur /sign-in)</li>
+          <li>Vérifiez que vous êtes connecté (si &quot;Authentifié&quot; = Non, allez sur /sign-in)</li>
           <li>Accédez à la page de test upload: <code>/test-upload</code></li>
           <li>Essayez d&apos;upload avec le testUploader (sans auth) d&apos;abord</li>
           <li>Si ça marche, essayez le resumeUploader (avec auth)</li>

@@ -83,44 +83,44 @@ async function seed() {
     const jobListings = await db
       .insert(JobListingTable)
       .values([
-        // Jobs JavaScript/TypeScript
+        // Job 1
         {
+          id: "job_1",
           organizationId: organizations[0].id,
+          organizationName: organizations[0].name,
           title: "Développeur Frontend React/Next.js",
-          description: `# Développeur Frontend React/Next.js
-
-## À propos du poste
-Nous recherchons un développeur frontend passionné pour rejoindre notre équipe dynamique. Vous travaillerez sur des projets innovants utilisant les dernières technologies React et Next.js.
-
-## Responsabilités
-- Développer des interfaces utilisateur modernes et réactives
-- Collaborer avec l'équipe UX/UI pour implémenter des designs pixel-perfect
-- Optimiser les performances des applications web
-- Maintenir et améliorer le code existant
-- Participer aux code reviews et mentoring
-
-## Compétences requises
-- 3+ années d'expérience avec React
-- Maîtrise de TypeScript
-- Expérience avec Next.js, TailwindCSS
-- Connaissance des bonnes pratiques SEO
-- Git, CI/CD
-
-## Ce que nous offrons
-- Télétravail flexible
-- Formation continue
-- Projets stimulants
-- Équipe bienveillante`,
-          wage: 55000,
-          wageInterval: "yearly",
-          stateAbbreviation: "CA",
+          url: "https://example.com/job/1",
+          descriptionHtml: `<h1>Développeur Frontend React/Next.js</h1>
+<h2>À propos du poste</h2>
+<p>Nous recherchons un développeur frontend passionné pour rejoindre notre équipe dynamique. Vous travaillerez sur des projets innovants utilisant les dernières technologies React et Next.js.</p>
+<h2>Responsabilités</h2>
+<ul>
+<li>Développer des interfaces utilisateur modernes et réactives</li>
+<li>Collaborer avec l'équipe UX/UI pour implémenter des designs pixel-perfect</li>
+<li>Optimiser les performances des applications web</li>
+<li>Maintenir et améliorer le code existant</li>
+<li>Participer aux code reviews et mentoring</li>
+</ul>
+<h2>Compétences requises</h2>
+<ul>
+<li>3+ années d'expérience avec React</li>
+<li>Maîtrise de TypeScript</li>
+<li>Expérience avec Next.js, TailwindCSS</li>
+<li>Connaissance des bonnes pratiques SEO</li>
+<li>Git, CI/CD</li>
+</ul>`,
           city: "San Francisco",
-          locationRequirement: "hybrid",
-          experienceLevel: "mid-level",
-          type: "full-time",
+          country: "USA",
+          location: "San Francisco, CA, USA",
+          aiSalaryMinValue: 50000,
+          aiSalaryMaxValue: 70000,
+          aiSalaryCurrency: "USD",
+          aiExperienceLevel: "3-5 ans",
+          aiWorkArrangement: "Hybrid",
+          aiKeySkills: ["React", "Next.js", "TypeScript", "TailwindCSS"],
+          aiEmploymentType: ["FULL_TIME"],
           status: "published",
           isFeatured: true,
-          postedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), // Il y a 2 jours
         },
         {
           organizationId: organizations[1].id,

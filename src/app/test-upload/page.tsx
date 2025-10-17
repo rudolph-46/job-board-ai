@@ -4,10 +4,21 @@ import { UploadDropzone } from "@/services/uploadthing/components/UploadThing"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
+interface UploadResult {
+  type: string
+  timestamp: Date
+  result: Array<{
+    name: string
+    url: string
+    size: number
+    key: string
+  }>
+}
+
 export default function TestUploadPage() {
   const [isUploading, setIsUploading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [uploadResults, setUploadResults] = useState<any[]>([])
+  const [uploadResults, setUploadResults] = useState<UploadResult[]>([])
 
   const clearResults = () => {
     setUploadResults([])
@@ -110,7 +121,7 @@ export default function TestUploadPage() {
                         {upload.timestamp.toLocaleTimeString()}
                       </span>
                     </div>
-                    {upload.result.map((file: any, fileIndex: number) => (
+                    {upload.result.map((file, fileIndex: number) => (
                       <div key={fileIndex} className="text-xs space-y-1">
                         <p><strong>Fichier:</strong> {file.name}</p>
                         <p><strong>Taille:</strong> {(file.size / 1024).toFixed(1)} KB</p>

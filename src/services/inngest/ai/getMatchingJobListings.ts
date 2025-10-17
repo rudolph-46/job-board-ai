@@ -20,7 +20,7 @@ const simplifiedListingSchema = z.object({
 
 export async function getMatchingJobListings(
   prompt: string,
-  jobListings: any[], // Type flexible pour accepter les données complètes de la DB
+  jobListings: unknown[], // Type flexible pour accepter les données complètes de la DB
   { maxNumberOfJobs }: { maxNumberOfJobs?: number } = {}
 ) {
   const NO_JOBS = "NO_JOBS"
