@@ -41,7 +41,7 @@ export const jobListingStatusEnum = pgEnum(
 export const experienceLevels = ["Entry", "Mid", "Senior", "Executive"] as const
 export type ExperienceLevel = (typeof experienceLevels)[number]
 
-export const jobListingTypes = ["FULL_TIME", "PART_TIME", "CONTRACT", "INTERNSHIP"] as const
+export const jobListingTypes = ["FULL_TIME", "PART_TIME", "CONTRACT", "CONTRACTOR", "INTERNSHIP", "INTERN"] as const
 export type JobListingType = (typeof jobListingTypes)[number]
 
 export const locationRequirements = ["On-site", "Remote", "Hybrid"] as const
