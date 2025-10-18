@@ -5,7 +5,7 @@ export function JobBoardSidebar() {
   return (
     <SidebarGroup className="group-data-[state=collapsed]:hidden">
       <SidebarGroupContent className="px-1">
-        <JobListingFilterForm />
+        <JobListingFilterForm showSubmitButtons={true} />
       </SidebarGroupContent>
     </SidebarGroup>
   )

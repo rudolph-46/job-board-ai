@@ -42,7 +42,7 @@ export function MobileFiltersWrapper({ totalJobs, children }: MobileFiltersWrapp
           <div className="sticky top-20">
             <div className="bg-card rounded-lg border p-6">
               <h2 className="font-semibold mb-4">Filtrer les offres</h2>
-              <JobListingFilterForm />
+              <JobListingFilterForm showSubmitButtons={true} />
             </div>
           </div>
         </div>

@@ -39,6 +39,7 @@ import { Button } from "@/components/ui/button"
 import { LoadingSwap } from "@/components/LoadingSwap"
 import { LocationSelectComponent } from "./LocationSelect"
 import { useEffect, useState } from "react"
+import { Search, RotateCcw } from "lucide-react"
 
 const ANY_VALUE = "any"
 
@@ -53,7 +54,11 @@ const jobListingFilterSchema = z.object({
     .optional(),
 })
 
-export function JobListingFilterForm() {
+interface JobListingFilterFormProps {
+  showSubmitButtons?: boolean // Pour afficher ou non les boutons de soumission (desktop vs mobile)
+}
+
+export function JobListingFilterForm({ showSubmitButtons = false }: JobListingFilterFormProps) {
   const searchParams = useSearchParams()
   const router = useRouter()
   const pathname = usePathname()
@@ -153,6 +158,29 @@ export function JobListingFilterForm() {
       window.dispatchEvent(new CustomEvent('filtersApplied'))
       console.log('✅ filtersApplied event dispatched')
     }, 100)
+  }
+
+  const handleReset = () => {
+    form.reset({
+      title: "",
+      locationId: ANY_VALUE,
+      experienceLevel: ANY_VALUE,
+      type: ANY_VALUE,
+      locationRequirement: ANY_VALUE,
+    })
+    // Rediriger vers l'URL de base pour effacer tous les filtres
+    router.push(pathname)
+  }
+
+  const hasActiveFilters = () => {
+    const values = form.getValues()
+    return !!(
+      values.title ||
+      (values.locationId && values.locationId !== ANY_VALUE) ||
+      (values.experienceLevel && values.experienceLevel !== ANY_VALUE) ||
+      (values.type && values.type !== ANY_VALUE) ||
+      (values.locationRequirement && values.locationRequirement !== ANY_VALUE)
+    )
   }
 
   return (
@@ -264,6 +292,32 @@ export function JobListingFilterForm() {
             </FormItem>
           )}
         />
+        
+        {/* Boutons de soumission (uniquement pour desktop) */}
+        {showSubmitButtons && (
+          <div className="flex flex-col gap-3 pt-4 border-t">
+            <Button 
+              type="submit" 
+              className="w-full h-10 font-medium"
+              disabled={form.formState.isSubmitting}
+            >
+              <Search className="w-4 h-4 mr-2" />
+              {form.formState.isSubmitting ? "Recherche..." : "Appliquer les filtres"}
+            </Button>
+            
+            {hasActiveFilters() && (
+              <Button
+                type="button"
+                variant="outline"
+                onClick={handleReset}
+                className="w-full h-10 text-muted-foreground hover:text-foreground"
+              >
+                <RotateCcw className="h-4 w-4 mr-2" />
+                Réinitialiser
+              </Button>
+            )}
+          </div>
+        )}
       </form>
     </Form>
   )
